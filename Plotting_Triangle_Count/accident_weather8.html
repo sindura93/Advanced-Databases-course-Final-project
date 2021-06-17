@@ -1,0 +1,4028 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f13589f394b74884b63f909555d569f4 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f13589f394b74884b63f909555d569f4" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f13589f394b74884b63f909555d569f4 = L.map(
+        'map_f13589f394b74884b63f909555d569f4', {
+        center: [55, 0],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_bd30a0528f11438d950fa80779d11972 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f13589f394b74884b63f909555d569f4);
+    
+        var geo_json_556bf0a4f75043a9a519f132d1041b4c = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 50.5], [-6.333333333333333, 50.5], [-6.333333333333333, 49.0], [-8.0, 49.0], [-8.0, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 49.0], "upper_right": [-6.333333333333333, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_556bf0a4f75043a9a519f132d1041b4c.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_aaafda32bd724c3c96ba27ce1700226c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1bf247eabd374f99ae2e62b582439066 = $(`<div id="html_1bf247eabd374f99ae2e62b582439066" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_aaafda32bd724c3c96ba27ce1700226c.setContent(html_1bf247eabd374f99ae2e62b582439066);
+            
+
+            geo_json_556bf0a4f75043a9a519f132d1041b4c.bindPopup(popup_aaafda32bd724c3c96ba27ce1700226c)
+            ;
+
+            
+        
+    
+        var geo_json_83f14021e1b24cf0befafbfd5c1ee5c1 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 50.5], [-4.666666666666666, 50.5], [-4.666666666666666, 49.0], [-6.333333333333333, 49.0], [-6.333333333333333, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 49.0], "upper_right": [-4.666666666666666, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_83f14021e1b24cf0befafbfd5c1ee5c1.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_cdd81c8081ac43628841dd8dea69a92a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fbc9bcc22c01469bb9a901eb49810b43 = $(`<div id="html_fbc9bcc22c01469bb9a901eb49810b43" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_cdd81c8081ac43628841dd8dea69a92a.setContent(html_fbc9bcc22c01469bb9a901eb49810b43);
+            
+
+            geo_json_83f14021e1b24cf0befafbfd5c1ee5c1.bindPopup(popup_cdd81c8081ac43628841dd8dea69a92a)
+            ;
+
+            
+        
+    
+        var geo_json_3d25147996bb475d84f9f7b2807b289c = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 50.5], [-2.999999999999999, 50.5], [-2.999999999999999, 49.0], [-4.666666666666666, 49.0], [-4.666666666666666, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 49.0], "upper_right": [-2.999999999999999, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_3d25147996bb475d84f9f7b2807b289c.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_aa8f6eb9c3cb4acd9aab4721e2701f4d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_05cb2ad598ee4d669e467a7139f61394 = $(`<div id="html_05cb2ad598ee4d669e467a7139f61394" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_aa8f6eb9c3cb4acd9aab4721e2701f4d.setContent(html_05cb2ad598ee4d669e467a7139f61394);
+            
+
+            geo_json_3d25147996bb475d84f9f7b2807b289c.bindPopup(popup_aa8f6eb9c3cb4acd9aab4721e2701f4d)
+            ;
+
+            
+        
+    
+        var geo_json_42583296e4a74d57a581973466cc92ce = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 50.5], [-1.333333333333333, 50.5], [-1.333333333333333, 49.0], [-3.0, 49.0], [-3.0, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 49.0], "upper_right": [-1.333333333333333, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_42583296e4a74d57a581973466cc92ce.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_9d721cb9aaeb4d7cab2071f953a3a347 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30c295b6cddf40ad8c3be754e66bc7ff = $(`<div id="html_30c295b6cddf40ad8c3be754e66bc7ff" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_9d721cb9aaeb4d7cab2071f953a3a347.setContent(html_30c295b6cddf40ad8c3be754e66bc7ff);
+            
+
+            geo_json_42583296e4a74d57a581973466cc92ce.bindPopup(popup_9d721cb9aaeb4d7cab2071f953a3a347)
+            ;
+
+            
+        
+    
+        var geo_json_7f50810d024846218f424498aa238288 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 50.5], [0.3333333333333339, 50.5], [0.3333333333333339, 49.0], [-1.333333333333333, 49.0], [-1.333333333333333, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 49.0], "upper_right": [0.3333333333333339, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_7f50810d024846218f424498aa238288.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_4ca6bdd7aee24b5d9d2f265bba169c73 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_67745d70ba7f4f2da59c3cbe8e535156 = $(`<div id="html_67745d70ba7f4f2da59c3cbe8e535156" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_4ca6bdd7aee24b5d9d2f265bba169c73.setContent(html_67745d70ba7f4f2da59c3cbe8e535156);
+            
+
+            geo_json_7f50810d024846218f424498aa238288.bindPopup(popup_4ca6bdd7aee24b5d9d2f265bba169c73)
+            ;
+
+            
+        
+    
+        var geo_json_0b764b0ed94a4a4c991e0c441c3d26af = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 50.5], [2.000000000000001, 50.5], [2.000000000000001, 49.0], [0.3333333333333339, 49.0], [0.3333333333333339, 50.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 49.0], "upper_right": [2.000000000000001, 50.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_0b764b0ed94a4a4c991e0c441c3d26af.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_91291743e9874b39af71a61067cbfa55 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dab5434243c24f8a8c9f225ba0a3579f = $(`<div id="html_dab5434243c24f8a8c9f225ba0a3579f" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_91291743e9874b39af71a61067cbfa55.setContent(html_dab5434243c24f8a8c9f225ba0a3579f);
+            
+
+            geo_json_0b764b0ed94a4a4c991e0c441c3d26af.bindPopup(popup_91291743e9874b39af71a61067cbfa55)
+            ;
+
+            
+        
+    
+        var geo_json_1375d995a60942029ebe43794115cf39 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 52.0], [-6.333333333333333, 52.0], [-6.333333333333333, 50.5], [-8.0, 50.5], [-8.0, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 50.5], "upper_right": [-6.333333333333333, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_1375d995a60942029ebe43794115cf39.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_fdeb2bf681a64661ab5c6e8f9a11d15d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_383e4fd6ea8f4d1db912e91ffbdb71d0 = $(`<div id="html_383e4fd6ea8f4d1db912e91ffbdb71d0" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_fdeb2bf681a64661ab5c6e8f9a11d15d.setContent(html_383e4fd6ea8f4d1db912e91ffbdb71d0);
+            
+
+            geo_json_1375d995a60942029ebe43794115cf39.bindPopup(popup_fdeb2bf681a64661ab5c6e8f9a11d15d)
+            ;
+
+            
+        
+    
+        var geo_json_df5aad4cac91425aad698ec9a4b3bafa = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 52.0], [-4.666666666666666, 52.0], [-4.666666666666666, 50.5], [-6.333333333333333, 50.5], [-6.333333333333333, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 50.5], "upper_right": [-4.666666666666666, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_df5aad4cac91425aad698ec9a4b3bafa.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_f9fde590c540476fba38d487229c170b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a7911a23a89e4f07bef908fc79e2e9bf = $(`<div id="html_a7911a23a89e4f07bef908fc79e2e9bf" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_f9fde590c540476fba38d487229c170b.setContent(html_a7911a23a89e4f07bef908fc79e2e9bf);
+            
+
+            geo_json_df5aad4cac91425aad698ec9a4b3bafa.bindPopup(popup_f9fde590c540476fba38d487229c170b)
+            ;
+
+            
+        
+    
+        var geo_json_76c8320875004e4dbb38778fdff6b68f = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 52.0], [-2.999999999999999, 52.0], [-2.999999999999999, 50.5], [-4.666666666666666, 50.5], [-4.666666666666666, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 50.5], "upper_right": [-2.999999999999999, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_76c8320875004e4dbb38778fdff6b68f.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_3177aab1fb1241b79cf10b9f809beb64 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c81624a68daa422785a2ad704867b93f = $(`<div id="html_c81624a68daa422785a2ad704867b93f" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_3177aab1fb1241b79cf10b9f809beb64.setContent(html_c81624a68daa422785a2ad704867b93f);
+            
+
+            geo_json_76c8320875004e4dbb38778fdff6b68f.bindPopup(popup_3177aab1fb1241b79cf10b9f809beb64)
+            ;
+
+            
+        
+    
+        var geo_json_51f72623ae0a427aadfcb38274150fb3 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 52.0], [-1.333333333333333, 52.0], [-1.333333333333333, 50.5], [-3.0, 50.5], [-3.0, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 50.5], "upper_right": [-1.333333333333333, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_51f72623ae0a427aadfcb38274150fb3.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_9d74c112570043b8ac4d013fa99b6fde = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8b59c86e80c64933aec0579441f2e44f = $(`<div id="html_8b59c86e80c64933aec0579441f2e44f" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_9d74c112570043b8ac4d013fa99b6fde.setContent(html_8b59c86e80c64933aec0579441f2e44f);
+            
+
+            geo_json_51f72623ae0a427aadfcb38274150fb3.bindPopup(popup_9d74c112570043b8ac4d013fa99b6fde)
+            ;
+
+            
+        
+    
+        var geo_json_c80d636a8d1c49fbae63923d0c4094d2 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 52.0], [0.3333333333333339, 52.0], [0.3333333333333339, 50.5], [-1.333333333333333, 50.5], [-1.333333333333333, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 50.5], "upper_right": [0.3333333333333339, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_c80d636a8d1c49fbae63923d0c4094d2.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_cea145a932cf4c4f842590f4461be741 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b82caced8a0f42339eba08bbecc4fe3f = $(`<div id="html_b82caced8a0f42339eba08bbecc4fe3f" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_cea145a932cf4c4f842590f4461be741.setContent(html_b82caced8a0f42339eba08bbecc4fe3f);
+            
+
+            geo_json_c80d636a8d1c49fbae63923d0c4094d2.bindPopup(popup_cea145a932cf4c4f842590f4461be741)
+            ;
+
+            
+        
+    
+        var geo_json_e3e3dc634ed5455ca878428936cf5519 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 52.0], [2.000000000000001, 52.0], [2.000000000000001, 50.5], [0.3333333333333339, 50.5], [0.3333333333333339, 52.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 50.5], "upper_right": [2.000000000000001, 52.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_e3e3dc634ed5455ca878428936cf5519.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_06115a18dc884752957223d31a617a7a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0a4b863b2ac8428eab99ecd5029c02d7 = $(`<div id="html_0a4b863b2ac8428eab99ecd5029c02d7" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_06115a18dc884752957223d31a617a7a.setContent(html_0a4b863b2ac8428eab99ecd5029c02d7);
+            
+
+            geo_json_e3e3dc634ed5455ca878428936cf5519.bindPopup(popup_06115a18dc884752957223d31a617a7a)
+            ;
+
+            
+        
+    
+        var geo_json_e0fc030d67e646009fc3f03fc957cfdc = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 53.5], [-6.333333333333333, 53.5], [-6.333333333333333, 52.0], [-8.0, 52.0], [-8.0, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 52.0], "upper_right": [-6.333333333333333, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_e0fc030d67e646009fc3f03fc957cfdc.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_57d8c0c5825d44fcb3c0075a4a471a9b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5aee441f0c634640a9f2af2fee1e0a9e = $(`<div id="html_5aee441f0c634640a9f2af2fee1e0a9e" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_57d8c0c5825d44fcb3c0075a4a471a9b.setContent(html_5aee441f0c634640a9f2af2fee1e0a9e);
+            
+
+            geo_json_e0fc030d67e646009fc3f03fc957cfdc.bindPopup(popup_57d8c0c5825d44fcb3c0075a4a471a9b)
+            ;
+
+            
+        
+    
+        var geo_json_5beaed3be1054549968de73380b08f57 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 53.5], [-4.666666666666666, 53.5], [-4.666666666666666, 52.0], [-6.333333333333333, 52.0], [-6.333333333333333, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 52.0], "upper_right": [-4.666666666666666, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_5beaed3be1054549968de73380b08f57.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_ad23b42f9f664587ae42c65670c978e5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c6517540739348b59696f92631135a32 = $(`<div id="html_c6517540739348b59696f92631135a32" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_ad23b42f9f664587ae42c65670c978e5.setContent(html_c6517540739348b59696f92631135a32);
+            
+
+            geo_json_5beaed3be1054549968de73380b08f57.bindPopup(popup_ad23b42f9f664587ae42c65670c978e5)
+            ;
+
+            
+        
+    
+        var geo_json_d7f7065fc196425e8aa1c49fe954208d = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 53.5], [-2.999999999999999, 53.5], [-2.999999999999999, 52.0], [-4.666666666666666, 52.0], [-4.666666666666666, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 52.0], "upper_right": [-2.999999999999999, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_d7f7065fc196425e8aa1c49fe954208d.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_f152d372d35449c2a4e3ac3905ae8ee4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bfdf54c043e54fc48225ce57002bf0da = $(`<div id="html_bfdf54c043e54fc48225ce57002bf0da" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_f152d372d35449c2a4e3ac3905ae8ee4.setContent(html_bfdf54c043e54fc48225ce57002bf0da);
+            
+
+            geo_json_d7f7065fc196425e8aa1c49fe954208d.bindPopup(popup_f152d372d35449c2a4e3ac3905ae8ee4)
+            ;
+
+            
+        
+    
+        var geo_json_f1aa84b79c5a423d8bc20f655f5fd0c5 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 53.5], [-1.333333333333333, 53.5], [-1.333333333333333, 52.0], [-3.0, 52.0], [-3.0, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 52.0], "upper_right": [-1.333333333333333, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_f1aa84b79c5a423d8bc20f655f5fd0c5.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_82ec46fb28e040448651c77eaf6e0e34 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ba7908b0c3be498daa49e712e15dce49 = $(`<div id="html_ba7908b0c3be498daa49e712e15dce49" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_82ec46fb28e040448651c77eaf6e0e34.setContent(html_ba7908b0c3be498daa49e712e15dce49);
+            
+
+            geo_json_f1aa84b79c5a423d8bc20f655f5fd0c5.bindPopup(popup_82ec46fb28e040448651c77eaf6e0e34)
+            ;
+
+            
+        
+    
+        var geo_json_468eec4d34e3461aa2b521ca7b4717b1 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 53.5], [0.3333333333333339, 53.5], [0.3333333333333339, 52.0], [-1.333333333333333, 52.0], [-1.333333333333333, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 52.0], "upper_right": [0.3333333333333339, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_468eec4d34e3461aa2b521ca7b4717b1.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_62f2e55979e04cef91cf0f07c06beff9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30cde86d93224e17b0494cee24444167 = $(`<div id="html_30cde86d93224e17b0494cee24444167" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_62f2e55979e04cef91cf0f07c06beff9.setContent(html_30cde86d93224e17b0494cee24444167);
+            
+
+            geo_json_468eec4d34e3461aa2b521ca7b4717b1.bindPopup(popup_62f2e55979e04cef91cf0f07c06beff9)
+            ;
+
+            
+        
+    
+        var geo_json_d233c8e5ec9347c7bb67e8e554a289e1 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 53.5], [2.000000000000001, 53.5], [2.000000000000001, 52.0], [0.3333333333333339, 52.0], [0.3333333333333339, 53.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 52.0], "upper_right": [2.000000000000001, 53.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_d233c8e5ec9347c7bb67e8e554a289e1.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_bb3372ea350b46df98f47dcd50936d6b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d6f01743be4478d96e64367a4b94f2b = $(`<div id="html_2d6f01743be4478d96e64367a4b94f2b" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_bb3372ea350b46df98f47dcd50936d6b.setContent(html_2d6f01743be4478d96e64367a4b94f2b);
+            
+
+            geo_json_d233c8e5ec9347c7bb67e8e554a289e1.bindPopup(popup_bb3372ea350b46df98f47dcd50936d6b)
+            ;
+
+            
+        
+    
+        var geo_json_2a5bc5aa2f014d93a48db9be6f6fa997 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 55.0], [-6.333333333333333, 55.0], [-6.333333333333333, 53.5], [-8.0, 53.5], [-8.0, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 53.5], "upper_right": [-6.333333333333333, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_2a5bc5aa2f014d93a48db9be6f6fa997.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_c40d70c014294ce2a998ee98f2de478b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c3700a0c53034b82adc8189929e6674f = $(`<div id="html_c3700a0c53034b82adc8189929e6674f" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_c40d70c014294ce2a998ee98f2de478b.setContent(html_c3700a0c53034b82adc8189929e6674f);
+            
+
+            geo_json_2a5bc5aa2f014d93a48db9be6f6fa997.bindPopup(popup_c40d70c014294ce2a998ee98f2de478b)
+            ;
+
+            
+        
+    
+        var geo_json_82a0ec48c3d843d7a058fd9adffc1efb = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 55.0], [-4.666666666666666, 55.0], [-4.666666666666666, 53.5], [-6.333333333333333, 53.5], [-6.333333333333333, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 53.5], "upper_right": [-4.666666666666666, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_82a0ec48c3d843d7a058fd9adffc1efb.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_a40df0c0a2d04ac0bb60d8259c03e986 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e819816803ee4b0993fe4cb1880c67e5 = $(`<div id="html_e819816803ee4b0993fe4cb1880c67e5" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_a40df0c0a2d04ac0bb60d8259c03e986.setContent(html_e819816803ee4b0993fe4cb1880c67e5);
+            
+
+            geo_json_82a0ec48c3d843d7a058fd9adffc1efb.bindPopup(popup_a40df0c0a2d04ac0bb60d8259c03e986)
+            ;
+
+            
+        
+    
+        var geo_json_35ff18b5ac7f4a62a82b105cb1215d86 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 55.0], [-2.999999999999999, 55.0], [-2.999999999999999, 53.5], [-4.666666666666666, 53.5], [-4.666666666666666, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 53.5], "upper_right": [-2.999999999999999, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_35ff18b5ac7f4a62a82b105cb1215d86.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_965b0a3fac994ed6924594d1d53368d6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_812f03ea638a41d09c6d0e99e25ab821 = $(`<div id="html_812f03ea638a41d09c6d0e99e25ab821" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_965b0a3fac994ed6924594d1d53368d6.setContent(html_812f03ea638a41d09c6d0e99e25ab821);
+            
+
+            geo_json_35ff18b5ac7f4a62a82b105cb1215d86.bindPopup(popup_965b0a3fac994ed6924594d1d53368d6)
+            ;
+
+            
+        
+    
+        var geo_json_b8bd7194e46b4077a1b80dd61e1535d2 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 55.0], [-1.333333333333333, 55.0], [-1.333333333333333, 53.5], [-3.0, 53.5], [-3.0, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 53.5], "upper_right": [-1.333333333333333, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_b8bd7194e46b4077a1b80dd61e1535d2.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_b354bdcc02754c969129eef0b95b77c2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b4e171d203eb44f4bf020eef8ff070f8 = $(`<div id="html_b4e171d203eb44f4bf020eef8ff070f8" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_b354bdcc02754c969129eef0b95b77c2.setContent(html_b4e171d203eb44f4bf020eef8ff070f8);
+            
+
+            geo_json_b8bd7194e46b4077a1b80dd61e1535d2.bindPopup(popup_b354bdcc02754c969129eef0b95b77c2)
+            ;
+
+            
+        
+    
+        var geo_json_29de8ce9d91f42e2ac5eafef30453cf6 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 55.0], [0.3333333333333339, 55.0], [0.3333333333333339, 53.5], [-1.333333333333333, 53.5], [-1.333333333333333, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 53.5], "upper_right": [0.3333333333333339, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_29de8ce9d91f42e2ac5eafef30453cf6.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_42c4177ce28b4b379a7c3e153834afb9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_09c69aa485e74928ba0e6ee84c66ef7c = $(`<div id="html_09c69aa485e74928ba0e6ee84c66ef7c" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_42c4177ce28b4b379a7c3e153834afb9.setContent(html_09c69aa485e74928ba0e6ee84c66ef7c);
+            
+
+            geo_json_29de8ce9d91f42e2ac5eafef30453cf6.bindPopup(popup_42c4177ce28b4b379a7c3e153834afb9)
+            ;
+
+            
+        
+    
+        var geo_json_8fb964e538f04d03b8883e09aa238541 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 55.0], [2.000000000000001, 55.0], [2.000000000000001, 53.5], [0.3333333333333339, 53.5], [0.3333333333333339, 55.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 53.5], "upper_right": [2.000000000000001, 55.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_8fb964e538f04d03b8883e09aa238541.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_47eb32fbdf244ffca88d038b22da50fc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2b0ed3704af44d8d9655f39c620b15da = $(`<div id="html_2b0ed3704af44d8d9655f39c620b15da" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_47eb32fbdf244ffca88d038b22da50fc.setContent(html_2b0ed3704af44d8d9655f39c620b15da);
+            
+
+            geo_json_8fb964e538f04d03b8883e09aa238541.bindPopup(popup_47eb32fbdf244ffca88d038b22da50fc)
+            ;
+
+            
+        
+    
+        var geo_json_1e12434cfde1458ca2d05bf1c7225261 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 56.5], [-6.333333333333333, 56.5], [-6.333333333333333, 55.0], [-8.0, 55.0], [-8.0, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 55.0], "upper_right": [-6.333333333333333, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_1e12434cfde1458ca2d05bf1c7225261.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_c47f236119c44eecb32c3a779e9c3432 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_36b766e474624a3c8767968e826553fe = $(`<div id="html_36b766e474624a3c8767968e826553fe" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_c47f236119c44eecb32c3a779e9c3432.setContent(html_36b766e474624a3c8767968e826553fe);
+            
+
+            geo_json_1e12434cfde1458ca2d05bf1c7225261.bindPopup(popup_c47f236119c44eecb32c3a779e9c3432)
+            ;
+
+            
+        
+    
+        var geo_json_41317c17516a4d698e93877f2a44bc4a = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 56.5], [-4.666666666666666, 56.5], [-4.666666666666666, 55.0], [-6.333333333333333, 55.0], [-6.333333333333333, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 55.0], "upper_right": [-4.666666666666666, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_41317c17516a4d698e93877f2a44bc4a.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_58b2146074e9450faf27288df7e4b2da = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8e92465e3f3b4be5b616cb6d65145d73 = $(`<div id="html_8e92465e3f3b4be5b616cb6d65145d73" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_58b2146074e9450faf27288df7e4b2da.setContent(html_8e92465e3f3b4be5b616cb6d65145d73);
+            
+
+            geo_json_41317c17516a4d698e93877f2a44bc4a.bindPopup(popup_58b2146074e9450faf27288df7e4b2da)
+            ;
+
+            
+        
+    
+        var geo_json_186ef3c1706d4a7984bce468c1279f59 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 56.5], [-2.999999999999999, 56.5], [-2.999999999999999, 55.0], [-4.666666666666666, 55.0], [-4.666666666666666, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 55.0], "upper_right": [-2.999999999999999, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_186ef3c1706d4a7984bce468c1279f59.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_a0c6f7167f2d4911b864a33eddfdda39 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6aa6f2c268884b09af8868431fc5d07c = $(`<div id="html_6aa6f2c268884b09af8868431fc5d07c" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_a0c6f7167f2d4911b864a33eddfdda39.setContent(html_6aa6f2c268884b09af8868431fc5d07c);
+            
+
+            geo_json_186ef3c1706d4a7984bce468c1279f59.bindPopup(popup_a0c6f7167f2d4911b864a33eddfdda39)
+            ;
+
+            
+        
+    
+        var geo_json_a6d766f5818a46c78c4749a2e372db50 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 56.5], [-1.333333333333333, 56.5], [-1.333333333333333, 55.0], [-3.0, 55.0], [-3.0, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 55.0], "upper_right": [-1.333333333333333, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_a6d766f5818a46c78c4749a2e372db50.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_822aab96363041f7897924b67158218f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71c44d4ab15c4bd4acadab70c8332b2a = $(`<div id="html_71c44d4ab15c4bd4acadab70c8332b2a" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_822aab96363041f7897924b67158218f.setContent(html_71c44d4ab15c4bd4acadab70c8332b2a);
+            
+
+            geo_json_a6d766f5818a46c78c4749a2e372db50.bindPopup(popup_822aab96363041f7897924b67158218f)
+            ;
+
+            
+        
+    
+        var geo_json_51f2a66a9bf04c69ba95d10f175eba6c = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 56.5], [0.3333333333333339, 56.5], [0.3333333333333339, 55.0], [-1.333333333333333, 55.0], [-1.333333333333333, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 55.0], "upper_right": [0.3333333333333339, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_51f2a66a9bf04c69ba95d10f175eba6c.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_1799e37d66004310b5d8c6b2698022d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_95320fc13a4446eebe6ecd1db6e57fe5 = $(`<div id="html_95320fc13a4446eebe6ecd1db6e57fe5" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_1799e37d66004310b5d8c6b2698022d0.setContent(html_95320fc13a4446eebe6ecd1db6e57fe5);
+            
+
+            geo_json_51f2a66a9bf04c69ba95d10f175eba6c.bindPopup(popup_1799e37d66004310b5d8c6b2698022d0)
+            ;
+
+            
+        
+    
+        var geo_json_6aa96856507c41568b453cb6b5d80b4f = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 56.5], [2.000000000000001, 56.5], [2.000000000000001, 55.0], [0.3333333333333339, 55.0], [0.3333333333333339, 56.5]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 55.0], "upper_right": [2.000000000000001, 56.5]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_6aa96856507c41568b453cb6b5d80b4f.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_592fa8cf40dc42968c43d650875163fe = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_011e33cbe5844d86a92c513f8949f745 = $(`<div id="html_011e33cbe5844d86a92c513f8949f745" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_592fa8cf40dc42968c43d650875163fe.setContent(html_011e33cbe5844d86a92c513f8949f745);
+            
+
+            geo_json_6aa96856507c41568b453cb6b5d80b4f.bindPopup(popup_592fa8cf40dc42968c43d650875163fe)
+            ;
+
+            
+        
+    
+        var geo_json_fd7c3e3f0edf4ad8bb11bee93b10b152 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-8.0, 58.0], [-6.333333333333333, 58.0], [-6.333333333333333, 56.5], [-8.0, 56.5], [-8.0, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-8.0, 56.5], "upper_right": [-6.333333333333333, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_fd7c3e3f0edf4ad8bb11bee93b10b152.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_13573ffe556e4a86a0337d37ae35b2aa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_96192911630b4076a9f0dda585f55eb2 = $(`<div id="html_96192911630b4076a9f0dda585f55eb2" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_13573ffe556e4a86a0337d37ae35b2aa.setContent(html_96192911630b4076a9f0dda585f55eb2);
+            
+
+            geo_json_fd7c3e3f0edf4ad8bb11bee93b10b152.bindPopup(popup_13573ffe556e4a86a0337d37ae35b2aa)
+            ;
+
+            
+        
+    
+        var geo_json_221b1d2d50fb4015b44ad8446247f514 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-6.333333333333333, 58.0], [-4.666666666666666, 58.0], [-4.666666666666666, 56.5], [-6.333333333333333, 56.5], [-6.333333333333333, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-6.333333333333333, 56.5], "upper_right": [-4.666666666666666, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_221b1d2d50fb4015b44ad8446247f514.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_2fd6c2ccbaa24578a524e881ac182321 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1a49998c09954e7e864ad4c60f0dc0db = $(`<div id="html_1a49998c09954e7e864ad4c60f0dc0db" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_2fd6c2ccbaa24578a524e881ac182321.setContent(html_1a49998c09954e7e864ad4c60f0dc0db);
+            
+
+            geo_json_221b1d2d50fb4015b44ad8446247f514.bindPopup(popup_2fd6c2ccbaa24578a524e881ac182321)
+            ;
+
+            
+        
+    
+        var geo_json_83923ba4d2da4c78b0c202a030709a9e = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-4.666666666666666, 58.0], [-2.999999999999999, 58.0], [-2.999999999999999, 56.5], [-4.666666666666666, 56.5], [-4.666666666666666, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-4.666666666666666, 56.5], "upper_right": [-2.999999999999999, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_83923ba4d2da4c78b0c202a030709a9e.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_a742f35b3cb842cabacfdef18336252d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_75248f840f534cac9d2df785409b65f5 = $(`<div id="html_75248f840f534cac9d2df785409b65f5" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_a742f35b3cb842cabacfdef18336252d.setContent(html_75248f840f534cac9d2df785409b65f5);
+            
+
+            geo_json_83923ba4d2da4c78b0c202a030709a9e.bindPopup(popup_a742f35b3cb842cabacfdef18336252d)
+            ;
+
+            
+        
+    
+        var geo_json_c93e9bd7f06c4cc4afd476769197a5bb = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-3.0, 58.0], [-1.333333333333333, 58.0], [-1.333333333333333, 56.5], [-3.0, 56.5], [-3.0, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-3.0, 56.5], "upper_right": [-1.333333333333333, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_c93e9bd7f06c4cc4afd476769197a5bb.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_c4774b7ba3b0433c966b32f93d55956b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e744140552b141c2817098fb4c27b6a6 = $(`<div id="html_e744140552b141c2817098fb4c27b6a6" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_c4774b7ba3b0433c966b32f93d55956b.setContent(html_e744140552b141c2817098fb4c27b6a6);
+            
+
+            geo_json_c93e9bd7f06c4cc4afd476769197a5bb.bindPopup(popup_c4774b7ba3b0433c966b32f93d55956b)
+            ;
+
+            
+        
+    
+        var geo_json_befa0b213eca4cd79f7db67f62be1295 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[-1.333333333333333, 58.0], [0.3333333333333339, 58.0], [0.3333333333333339, 56.5], [-1.333333333333333, 56.5], [-1.333333333333333, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [-1.333333333333333, 56.5], "upper_right": [0.3333333333333339, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_befa0b213eca4cd79f7db67f62be1295.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_a6505b1ce31b4c3eb1c1264ae7ad99be = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_470f3db783cc4116959729f476039ff7 = $(`<div id="html_470f3db783cc4116959729f476039ff7" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_a6505b1ce31b4c3eb1c1264ae7ad99be.setContent(html_470f3db783cc4116959729f476039ff7);
+            
+
+            geo_json_befa0b213eca4cd79f7db67f62be1295.bindPopup(popup_a6505b1ce31b4c3eb1c1264ae7ad99be)
+            ;
+
+            
+        
+    
+        var geo_json_15dbe02852574b23a2a864471da59884 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[0.3333333333333339, 58.0], [2.000000000000001, 58.0], [2.000000000000001, 56.5], [0.3333333333333339, 56.5], [0.3333333333333339, 58.0]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "dashArray": "5, 5", "fillColor": "#67000d", "fillOpacity": 0.55, "weight": 2}}, "type": "Feature"}], "properties": {"lower_left": [0.3333333333333339, 56.5], "upper_right": [2.000000000000001, 58.0]}, "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_f13589f394b74884b63f909555d569f4 );
+        geo_json_15dbe02852574b23a2a864471da59884.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+            var popup_0a599a68471b41a7b9bdc79c71584f5a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5a3a5aa063364877a813fb790e3a1ad5 = $(`<div id="html_5a3a5aa063364877a813fb790e3a1ad5" style="width: 100.0%; height: 100.0%;">total vehicles 159, total casualties 123</div>`)[0];
+                popup_0a599a68471b41a7b9bdc79c71584f5a.setContent(html_5a3a5aa063364877a813fb790e3a1ad5);
+            
+
+            geo_json_15dbe02852574b23a2a864471da59884.bindPopup(popup_0a599a68471b41a7b9bdc79c71584f5a)
+            ;
+
+            
+        
+    
+            var marker_cluster_77c3dd2ae1dd49e0ad262559adf68691 = L.markerClusterGroup({});
+            map_f13589f394b74884b63f909555d569f4.addLayer(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+            
+    
+        var marker_bdf7c843a9194f88b48fd5545572370c = L.marker(
+            [55.89334100000001, -4.384501],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_32c3eb1b06e840c3aaac3c0bf8d85faa = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bdf7c843a9194f88b48fd5545572370c.setIcon(icon_32c3eb1b06e840c3aaac3c0bf8d85faa);
+            
+    
+            var popup_9f95c398635e41618757ecf1ae5fd1e2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8e6091659261443cb548212ef4a54a78 = $(`<div id="html_8e6091659261443cb548212ef4a54a78" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9f95c398635e41618757ecf1ae5fd1e2.setContent(html_8e6091659261443cb548212ef4a54a78);
+            
+
+            marker_bdf7c843a9194f88b48fd5545572370c.bindPopup(popup_9f95c398635e41618757ecf1ae5fd1e2)
+            ;
+
+            
+        
+    
+        var marker_fb73bd64cb894e8abdb965d791439909 = L.marker(
+            [52.067547999999995, -2.722243],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_3784b1706e9a4ff08c70ea144c10ead0 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fb73bd64cb894e8abdb965d791439909.setIcon(icon_3784b1706e9a4ff08c70ea144c10ead0);
+            
+    
+            var popup_53cc9f5f5b6f4d0297ae32e0122353e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_853d3999afb941e78b5c749aa7768544 = $(`<div id="html_853d3999afb941e78b5c749aa7768544" style="width: 100.0%; height: 100.0%;">Number of vehicles: 4 Number of casualties: 1</div>`)[0];
+                popup_53cc9f5f5b6f4d0297ae32e0122353e9.setContent(html_853d3999afb941e78b5c749aa7768544);
+            
+
+            marker_fb73bd64cb894e8abdb965d791439909.bindPopup(popup_53cc9f5f5b6f4d0297ae32e0122353e9)
+            ;
+
+            
+        
+    
+        var marker_0e157209c15d460eb1f568989501e987 = L.marker(
+            [52.037104, 1.203003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_a765ac6ef2cb49bcbfce958980dae605 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0e157209c15d460eb1f568989501e987.setIcon(icon_a765ac6ef2cb49bcbfce958980dae605);
+            
+    
+            var popup_ffa8c71e31eb4a9ab3379a6d57344a57 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dd1800171a514f42b6ec2fba09296e09 = $(`<div id="html_dd1800171a514f42b6ec2fba09296e09" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_ffa8c71e31eb4a9ab3379a6d57344a57.setContent(html_dd1800171a514f42b6ec2fba09296e09);
+            
+
+            marker_0e157209c15d460eb1f568989501e987.bindPopup(popup_ffa8c71e31eb4a9ab3379a6d57344a57)
+            ;
+
+            
+        
+    
+        var marker_26de53c459d44b36ad70293e586f3a97 = L.marker(
+            [51.417595, -0.5458029999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c6eaa178895a421eac8e4a1a93ab15b5 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_26de53c459d44b36ad70293e586f3a97.setIcon(icon_c6eaa178895a421eac8e4a1a93ab15b5);
+            
+    
+            var popup_9af2964c0a344b3690e131d12ec74436 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_697d5d792cc4436a9c172d31a8481d3a = $(`<div id="html_697d5d792cc4436a9c172d31a8481d3a" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_9af2964c0a344b3690e131d12ec74436.setContent(html_697d5d792cc4436a9c172d31a8481d3a);
+            
+
+            marker_26de53c459d44b36ad70293e586f3a97.bindPopup(popup_9af2964c0a344b3690e131d12ec74436)
+            ;
+
+            
+        
+    
+        var marker_1f4b2533299c49d0b7a8250ec61aa397 = L.marker(
+            [51.868995, 0.582962],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_94c4219ca1114681b114943079242d63 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f4b2533299c49d0b7a8250ec61aa397.setIcon(icon_94c4219ca1114681b114943079242d63);
+            
+    
+            var popup_c7f3574e4056430a9566664814b7429c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7f2f6d01495d4a0ebb5d78117289bae1 = $(`<div id="html_7f2f6d01495d4a0ebb5d78117289bae1" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 2</div>`)[0];
+                popup_c7f3574e4056430a9566664814b7429c.setContent(html_7f2f6d01495d4a0ebb5d78117289bae1);
+            
+
+            marker_1f4b2533299c49d0b7a8250ec61aa397.bindPopup(popup_c7f3574e4056430a9566664814b7429c)
+            ;
+
+            
+        
+    
+        var marker_c87441914e1e45eeb053cae77f3e9280 = L.marker(
+            [52.512972999999995, -1.841562],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ec1e022a43c94ec4ac7220929172ab4d = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c87441914e1e45eeb053cae77f3e9280.setIcon(icon_ec1e022a43c94ec4ac7220929172ab4d);
+            
+    
+            var popup_9ff14433c9cd457b8e06c771b759d0f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_298a863456274b08ba5a0db587fba7da = $(`<div id="html_298a863456274b08ba5a0db587fba7da" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_9ff14433c9cd457b8e06c771b759d0f8.setContent(html_298a863456274b08ba5a0db587fba7da);
+            
+
+            marker_c87441914e1e45eeb053cae77f3e9280.bindPopup(popup_9ff14433c9cd457b8e06c771b759d0f8)
+            ;
+
+            
+        
+    
+        var marker_00fcb5fecadd4a6b89b0284221ddb435 = L.marker(
+            [51.294816, 0.146299],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_d403fef8b86b42dd8114f9193f63d1e6 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_00fcb5fecadd4a6b89b0284221ddb435.setIcon(icon_d403fef8b86b42dd8114f9193f63d1e6);
+            
+    
+            var popup_08f0b137dad849cebc5810f1dc4a9a7b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1648b3db3afe46858986b480bdfe72ef = $(`<div id="html_1648b3db3afe46858986b480bdfe72ef" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_08f0b137dad849cebc5810f1dc4a9a7b.setContent(html_1648b3db3afe46858986b480bdfe72ef);
+            
+
+            marker_00fcb5fecadd4a6b89b0284221ddb435.bindPopup(popup_08f0b137dad849cebc5810f1dc4a9a7b)
+            ;
+
+            
+        
+    
+        var marker_2e0abe31c0ad4df3a14d17ecc415a572 = L.marker(
+            [54.245028000000005, -0.780809],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_bafea5ea03bb483aba004e4bde635da3 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e0abe31c0ad4df3a14d17ecc415a572.setIcon(icon_bafea5ea03bb483aba004e4bde635da3);
+            
+    
+            var popup_885048579351467b8d442488569dbf5d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d934118df9ad4d4095609eceddfa1446 = $(`<div id="html_d934118df9ad4d4095609eceddfa1446" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_885048579351467b8d442488569dbf5d.setContent(html_d934118df9ad4d4095609eceddfa1446);
+            
+
+            marker_2e0abe31c0ad4df3a14d17ecc415a572.bindPopup(popup_885048579351467b8d442488569dbf5d)
+            ;
+
+            
+        
+    
+        var marker_901b3cf29e6844e783447d18b427fb99 = L.marker(
+            [52.413641999999996, -1.961007],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_d5be9a82a32d497f83a78f98b0c49fe6 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_901b3cf29e6844e783447d18b427fb99.setIcon(icon_d5be9a82a32d497f83a78f98b0c49fe6);
+            
+    
+            var popup_2cd4e99fcd7f4915bbc7cf5685fb0434 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e81d185a3c5d45588ba32f329d3b0752 = $(`<div id="html_e81d185a3c5d45588ba32f329d3b0752" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_2cd4e99fcd7f4915bbc7cf5685fb0434.setContent(html_e81d185a3c5d45588ba32f329d3b0752);
+            
+
+            marker_901b3cf29e6844e783447d18b427fb99.bindPopup(popup_2cd4e99fcd7f4915bbc7cf5685fb0434)
+            ;
+
+            
+        
+    
+        var marker_c23043092c9942f8899eb523307739e8 = L.marker(
+            [51.631389, -0.723114],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c67eff843d1349aba2b9ef5333520ef9 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c23043092c9942f8899eb523307739e8.setIcon(icon_c67eff843d1349aba2b9ef5333520ef9);
+            
+    
+            var popup_aa17babf2c3c436d8b2f6493e11cae08 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_99f801bb3cf444fdb264697461604ec7 = $(`<div id="html_99f801bb3cf444fdb264697461604ec7" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 1</div>`)[0];
+                popup_aa17babf2c3c436d8b2f6493e11cae08.setContent(html_99f801bb3cf444fdb264697461604ec7);
+            
+
+            marker_c23043092c9942f8899eb523307739e8.bindPopup(popup_aa17babf2c3c436d8b2f6493e11cae08)
+            ;
+
+            
+        
+    
+        var marker_99635ebefd134e2fa09addf167a4273c = L.marker(
+            [52.590033, -2.019748],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_1a5e8b3ad2e949e1896fd7f33e584e59 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_99635ebefd134e2fa09addf167a4273c.setIcon(icon_1a5e8b3ad2e949e1896fd7f33e584e59);
+            
+    
+            var popup_53aa593bcd294dc6a606077d5a8d0868 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_41e24cae0b0e4bbc9bb6b92d6daee20b = $(`<div id="html_41e24cae0b0e4bbc9bb6b92d6daee20b" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 2</div>`)[0];
+                popup_53aa593bcd294dc6a606077d5a8d0868.setContent(html_41e24cae0b0e4bbc9bb6b92d6daee20b);
+            
+
+            marker_99635ebefd134e2fa09addf167a4273c.bindPopup(popup_53aa593bcd294dc6a606077d5a8d0868)
+            ;
+
+            
+        
+    
+        var marker_10d99ad0c02342388e5e8ac666799f29 = L.marker(
+            [51.500377, -2.59136],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_46ac15c1a7f34e24bee29938b0f8719c = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10d99ad0c02342388e5e8ac666799f29.setIcon(icon_46ac15c1a7f34e24bee29938b0f8719c);
+            
+    
+            var popup_347af981622d4c859e82a969ac01cfad = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_494252dadaac46a3b9356a7a6055900e = $(`<div id="html_494252dadaac46a3b9356a7a6055900e" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 1</div>`)[0];
+                popup_347af981622d4c859e82a969ac01cfad.setContent(html_494252dadaac46a3b9356a7a6055900e);
+            
+
+            marker_10d99ad0c02342388e5e8ac666799f29.bindPopup(popup_347af981622d4c859e82a969ac01cfad)
+            ;
+
+            
+        
+    
+        var marker_8f0a6e2a39df46c9aa2d6be11f61dafa = L.marker(
+            [52.557735, -2.164877],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_d23dd29b710c4b2996667763e9836aa6 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f0a6e2a39df46c9aa2d6be11f61dafa.setIcon(icon_d23dd29b710c4b2996667763e9836aa6);
+            
+    
+            var popup_52cde789c1bb4e41afa69d78e063d2e5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59bfde7594c9426a854744175125426e = $(`<div id="html_59bfde7594c9426a854744175125426e" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_52cde789c1bb4e41afa69d78e063d2e5.setContent(html_59bfde7594c9426a854744175125426e);
+            
+
+            marker_8f0a6e2a39df46c9aa2d6be11f61dafa.bindPopup(popup_52cde789c1bb4e41afa69d78e063d2e5)
+            ;
+
+            
+        
+    
+        var marker_fdaf379440014263a36d563fc45147c4 = L.marker(
+            [51.147649, 1.165186],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c6f6ef25005541fcbeb824a5df011072 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fdaf379440014263a36d563fc45147c4.setIcon(icon_c6f6ef25005541fcbeb824a5df011072);
+            
+    
+            var popup_30ae18acf8414a6e9a23414b551dbc9f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f4d9dda8b9a4590ac5c45ce401ab22c = $(`<div id="html_3f4d9dda8b9a4590ac5c45ce401ab22c" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_30ae18acf8414a6e9a23414b551dbc9f.setContent(html_3f4d9dda8b9a4590ac5c45ce401ab22c);
+            
+
+            marker_fdaf379440014263a36d563fc45147c4.bindPopup(popup_30ae18acf8414a6e9a23414b551dbc9f)
+            ;
+
+            
+        
+    
+        var marker_230b68d31289495c8cabf2dad9f2f285 = L.marker(
+            [53.089217000000005, -0.5408029999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ef5d1a4f352043c4be7d4dc3ec95c382 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_230b68d31289495c8cabf2dad9f2f285.setIcon(icon_ef5d1a4f352043c4be7d4dc3ec95c382);
+            
+    
+            var popup_46a0d029405e4ab19c3342e1d0859ba9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5991d88f58434616a754f0d752f6ade3 = $(`<div id="html_5991d88f58434616a754f0d752f6ade3" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 1</div>`)[0];
+                popup_46a0d029405e4ab19c3342e1d0859ba9.setContent(html_5991d88f58434616a754f0d752f6ade3);
+            
+
+            marker_230b68d31289495c8cabf2dad9f2f285.bindPopup(popup_46a0d029405e4ab19c3342e1d0859ba9)
+            ;
+
+            
+        
+    
+        var marker_b3359d4ed95249b98d1edce4f8ff01c6 = L.marker(
+            [51.584001, 0.423713],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_8989b51b1ae04a9f83c0c2e1029806ff = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b3359d4ed95249b98d1edce4f8ff01c6.setIcon(icon_8989b51b1ae04a9f83c0c2e1029806ff);
+            
+    
+            var popup_8463e2b655574ca0b3d7e9a9b748ba47 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ef3e9c63481248998944a517086ccca2 = $(`<div id="html_ef3e9c63481248998944a517086ccca2" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_8463e2b655574ca0b3d7e9a9b748ba47.setContent(html_ef3e9c63481248998944a517086ccca2);
+            
+
+            marker_b3359d4ed95249b98d1edce4f8ff01c6.bindPopup(popup_8463e2b655574ca0b3d7e9a9b748ba47)
+            ;
+
+            
+        
+    
+        var marker_de09720b74514e999da8cab746ecb129 = L.marker(
+            [51.554111, -0.191044],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_505489bdcfbe45618f471fd9a5c0b64c = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_de09720b74514e999da8cab746ecb129.setIcon(icon_505489bdcfbe45618f471fd9a5c0b64c);
+            
+    
+            var popup_9fb38f798bcf4c4e8d67feda5f9222ed = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5e365f1b406747b38f4463c95ccff778 = $(`<div id="html_5e365f1b406747b38f4463c95ccff778" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9fb38f798bcf4c4e8d67feda5f9222ed.setContent(html_5e365f1b406747b38f4463c95ccff778);
+            
+
+            marker_de09720b74514e999da8cab746ecb129.bindPopup(popup_9fb38f798bcf4c4e8d67feda5f9222ed)
+            ;
+
+            
+        
+    
+        var marker_7da26942deb5424d979cfdbab1c116c8 = L.marker(
+            [53.340242, -4.242516999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_1566818c6cc44affb7fd5b6eaabfd559 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7da26942deb5424d979cfdbab1c116c8.setIcon(icon_1566818c6cc44affb7fd5b6eaabfd559);
+            
+    
+            var popup_bd0ed093cf2d4b1bb13e8788f4f5e6e5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6a551f73edf44c9cafb6ebfc1e81d9ae = $(`<div id="html_6a551f73edf44c9cafb6ebfc1e81d9ae" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_bd0ed093cf2d4b1bb13e8788f4f5e6e5.setContent(html_6a551f73edf44c9cafb6ebfc1e81d9ae);
+            
+
+            marker_7da26942deb5424d979cfdbab1c116c8.bindPopup(popup_bd0ed093cf2d4b1bb13e8788f4f5e6e5)
+            ;
+
+            
+        
+    
+        var marker_ea8e8aa11dd945bda265feb666583b0e = L.marker(
+            [51.72547, -4.976233000000001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_92a1d180bbee4c3db9246dfa33f7c8bb = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ea8e8aa11dd945bda265feb666583b0e.setIcon(icon_92a1d180bbee4c3db9246dfa33f7c8bb);
+            
+    
+            var popup_2d654613cd894640a970c11d27ae8567 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d4ae729d85f4fe691e80602e692987d = $(`<div id="html_2d4ae729d85f4fe691e80602e692987d" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_2d654613cd894640a970c11d27ae8567.setContent(html_2d4ae729d85f4fe691e80602e692987d);
+            
+
+            marker_ea8e8aa11dd945bda265feb666583b0e.bindPopup(popup_2d654613cd894640a970c11d27ae8567)
+            ;
+
+            
+        
+    
+        var marker_96239a2d18a84a36b8f30b542c6089ba = L.marker(
+            [52.94497, -0.602858],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_775f38f45ad3437ea105c3d6be74f5bb = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_96239a2d18a84a36b8f30b542c6089ba.setIcon(icon_775f38f45ad3437ea105c3d6be74f5bb);
+            
+    
+            var popup_fdffbbf5022f463e86641d4421534b2d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_25322068bc224acd9dcc36c5f0c7a58d = $(`<div id="html_25322068bc224acd9dcc36c5f0c7a58d" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_fdffbbf5022f463e86641d4421534b2d.setContent(html_25322068bc224acd9dcc36c5f0c7a58d);
+            
+
+            marker_96239a2d18a84a36b8f30b542c6089ba.bindPopup(popup_fdffbbf5022f463e86641d4421534b2d)
+            ;
+
+            
+        
+    
+        var marker_40243778cfb14cc8a88bcb52b3d2af34 = L.marker(
+            [51.176299, 1.212942],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_7a067294bd8a4753b954df04d59cb209 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40243778cfb14cc8a88bcb52b3d2af34.setIcon(icon_7a067294bd8a4753b954df04d59cb209);
+            
+    
+            var popup_f1dd7b3e334847468c0fd7e95c68eaf5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e525504fe474412998734e0b11a86d00 = $(`<div id="html_e525504fe474412998734e0b11a86d00" style="width: 100.0%; height: 100.0%;">Number of vehicles: 4 Number of casualties: 1</div>`)[0];
+                popup_f1dd7b3e334847468c0fd7e95c68eaf5.setContent(html_e525504fe474412998734e0b11a86d00);
+            
+
+            marker_40243778cfb14cc8a88bcb52b3d2af34.bindPopup(popup_f1dd7b3e334847468c0fd7e95c68eaf5)
+            ;
+
+            
+        
+    
+        var marker_553d736848b245359a186486f3ea2609 = L.marker(
+            [51.479969, -2.5994490000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_0dcf106fef1a4a1f9e9e50bce775b64d = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_553d736848b245359a186486f3ea2609.setIcon(icon_0dcf106fef1a4a1f9e9e50bce775b64d);
+            
+    
+            var popup_cf05735a9ec94be3a3f980a6bc4f3135 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc85858bb2c4489c92f5d373469ff41c = $(`<div id="html_dc85858bb2c4489c92f5d373469ff41c" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_cf05735a9ec94be3a3f980a6bc4f3135.setContent(html_dc85858bb2c4489c92f5d373469ff41c);
+            
+
+            marker_553d736848b245359a186486f3ea2609.bindPopup(popup_cf05735a9ec94be3a3f980a6bc4f3135)
+            ;
+
+            
+        
+    
+        var marker_8545cc714096483f9e62da99fa61fccd = L.marker(
+            [51.578629, -0.032606],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_4f0a4377ed584f778d5837632024a36a = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8545cc714096483f9e62da99fa61fccd.setIcon(icon_4f0a4377ed584f778d5837632024a36a);
+            
+    
+            var popup_b561522dba3d4c60b5a06466327a30fa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bccc4c2edfdb4ace970a18725ce1cf56 = $(`<div id="html_bccc4c2edfdb4ace970a18725ce1cf56" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_b561522dba3d4c60b5a06466327a30fa.setContent(html_bccc4c2edfdb4ace970a18725ce1cf56);
+            
+
+            marker_8545cc714096483f9e62da99fa61fccd.bindPopup(popup_b561522dba3d4c60b5a06466327a30fa)
+            ;
+
+            
+        
+    
+        var marker_f7b220f4c03a4e43aa4fc6faf3879aeb = L.marker(
+            [51.091055, 1.145748],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_f3d231bd6b9547b58ebe33b0f442ebd0 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7b220f4c03a4e43aa4fc6faf3879aeb.setIcon(icon_f3d231bd6b9547b58ebe33b0f442ebd0);
+            
+    
+            var popup_41ccafd25d344eb1be564bc03338f767 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_92b1ddab08c346c3adb5dd9271d6aea0 = $(`<div id="html_92b1ddab08c346c3adb5dd9271d6aea0" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_41ccafd25d344eb1be564bc03338f767.setContent(html_92b1ddab08c346c3adb5dd9271d6aea0);
+            
+
+            marker_f7b220f4c03a4e43aa4fc6faf3879aeb.bindPopup(popup_41ccafd25d344eb1be564bc03338f767)
+            ;
+
+            
+        
+    
+        var marker_24c613c61db740f5bd1bb36f01d5bd00 = L.marker(
+            [51.818495, -0.36343600000000004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_7538edf0995841c2ba83404c637702bb = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_24c613c61db740f5bd1bb36f01d5bd00.setIcon(icon_7538edf0995841c2ba83404c637702bb);
+            
+    
+            var popup_bb1064d9ba6145b48cbc61d120315ae0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d84ed6e9fe93423b9e8c933f2a80319f = $(`<div id="html_d84ed6e9fe93423b9e8c933f2a80319f" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_bb1064d9ba6145b48cbc61d120315ae0.setContent(html_d84ed6e9fe93423b9e8c933f2a80319f);
+            
+
+            marker_24c613c61db740f5bd1bb36f01d5bd00.bindPopup(popup_bb1064d9ba6145b48cbc61d120315ae0)
+            ;
+
+            
+        
+    
+        var marker_503336dd71ed48dc9036c134c59454cb = L.marker(
+            [52.569458, -1.157],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_3d7d5eee7dd545dc877ebc760bef49cc = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_503336dd71ed48dc9036c134c59454cb.setIcon(icon_3d7d5eee7dd545dc877ebc760bef49cc);
+            
+    
+            var popup_9547ce34c45e4190a6a5cfa5fd972e12 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f211778a47e74c53a87994f666736400 = $(`<div id="html_f211778a47e74c53a87994f666736400" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9547ce34c45e4190a6a5cfa5fd972e12.setContent(html_f211778a47e74c53a87994f666736400);
+            
+
+            marker_503336dd71ed48dc9036c134c59454cb.bindPopup(popup_9547ce34c45e4190a6a5cfa5fd972e12)
+            ;
+
+            
+        
+    
+        var marker_50a149e0d84e4dfcbab8a1ffb38d514f = L.marker(
+            [53.591649, -2.8204919999999998],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ed1b68dd8f0c46e8b418c2d851d1f580 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50a149e0d84e4dfcbab8a1ffb38d514f.setIcon(icon_ed1b68dd8f0c46e8b418c2d851d1f580);
+            
+    
+            var popup_d72648dc243549d39959be0472c00f6b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_520c920c4bb448ff977ae25531212749 = $(`<div id="html_520c920c4bb448ff977ae25531212749" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_d72648dc243549d39959be0472c00f6b.setContent(html_520c920c4bb448ff977ae25531212749);
+            
+
+            marker_50a149e0d84e4dfcbab8a1ffb38d514f.bindPopup(popup_d72648dc243549d39959be0472c00f6b)
+            ;
+
+            
+        
+    
+        var marker_13dea61aab50442586baa99bf6d52e9b = L.marker(
+            [51.839897, -4.418718],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_bd285b78d50d44da95bdd52047ab4815 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13dea61aab50442586baa99bf6d52e9b.setIcon(icon_bd285b78d50d44da95bdd52047ab4815);
+            
+    
+            var popup_014161fc2ec34cce86b99dda8373109a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_50ca3cdefd5646aba89070de09d0f1ce = $(`<div id="html_50ca3cdefd5646aba89070de09d0f1ce" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 3</div>`)[0];
+                popup_014161fc2ec34cce86b99dda8373109a.setContent(html_50ca3cdefd5646aba89070de09d0f1ce);
+            
+
+            marker_13dea61aab50442586baa99bf6d52e9b.bindPopup(popup_014161fc2ec34cce86b99dda8373109a)
+            ;
+
+            
+        
+    
+        var marker_effb5e50e2e642869be78262b71280f6 = L.marker(
+            [51.572782000000004, -3.288961],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_39aa22e1835544488799e71f9b7ebf2a = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_effb5e50e2e642869be78262b71280f6.setIcon(icon_39aa22e1835544488799e71f9b7ebf2a);
+            
+    
+            var popup_b446ccd7a85642d2bd1002abaa08986a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76ab06fcdacb4f5b864641fda1893a64 = $(`<div id="html_76ab06fcdacb4f5b864641fda1893a64" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_b446ccd7a85642d2bd1002abaa08986a.setContent(html_76ab06fcdacb4f5b864641fda1893a64);
+            
+
+            marker_effb5e50e2e642869be78262b71280f6.bindPopup(popup_b446ccd7a85642d2bd1002abaa08986a)
+            ;
+
+            
+        
+    
+        var marker_21a21359ee2d42aba15f3aad1cda6b58 = L.marker(
+            [52.259781, 0.400086],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_3fb31a4b1d5c4ab8bb8ad984cccdfeb7 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_21a21359ee2d42aba15f3aad1cda6b58.setIcon(icon_3fb31a4b1d5c4ab8bb8ad984cccdfeb7);
+            
+    
+            var popup_83c2a17323b443019f1170c750cc73a3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_14e44eb993ba46d78e80053366f2b3b6 = $(`<div id="html_14e44eb993ba46d78e80053366f2b3b6" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_83c2a17323b443019f1170c750cc73a3.setContent(html_14e44eb993ba46d78e80053366f2b3b6);
+            
+
+            marker_21a21359ee2d42aba15f3aad1cda6b58.bindPopup(popup_83c2a17323b443019f1170c750cc73a3)
+            ;
+
+            
+        
+    
+        var marker_6edaa1125a524556b7c06bb0ec865d5d = L.marker(
+            [52.43639399999999, -1.474235],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_063ab35e8ec540ff868194256585884b = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6edaa1125a524556b7c06bb0ec865d5d.setIcon(icon_063ab35e8ec540ff868194256585884b);
+            
+    
+            var popup_cd860b93176c4d2da74275be8c90f7aa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49502ba7eff14afea49dd0dafb5042a8 = $(`<div id="html_49502ba7eff14afea49dd0dafb5042a8" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 1</div>`)[0];
+                popup_cd860b93176c4d2da74275be8c90f7aa.setContent(html_49502ba7eff14afea49dd0dafb5042a8);
+            
+
+            marker_6edaa1125a524556b7c06bb0ec865d5d.bindPopup(popup_cd860b93176c4d2da74275be8c90f7aa)
+            ;
+
+            
+        
+    
+        var marker_a940e78f12ac4f8e86a560c30bad4885 = L.marker(
+            [53.413578, -3.076429],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c059b1e32acc47daa781cea29c005dc3 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a940e78f12ac4f8e86a560c30bad4885.setIcon(icon_c059b1e32acc47daa781cea29c005dc3);
+            
+    
+            var popup_82af190fb847438c804d5354e91fc3d3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dd1fd60119ce4fccb2c6cd14a8dfb851 = $(`<div id="html_dd1fd60119ce4fccb2c6cd14a8dfb851" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_82af190fb847438c804d5354e91fc3d3.setContent(html_dd1fd60119ce4fccb2c6cd14a8dfb851);
+            
+
+            marker_a940e78f12ac4f8e86a560c30bad4885.bindPopup(popup_82af190fb847438c804d5354e91fc3d3)
+            ;
+
+            
+        
+    
+        var marker_d3229da1bfd8480881dfbdcedb472bfc = L.marker(
+            [51.494549, -2.566019],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_0b6609e3728d4a0cb67a03b659a5bc96 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3229da1bfd8480881dfbdcedb472bfc.setIcon(icon_0b6609e3728d4a0cb67a03b659a5bc96);
+            
+    
+            var popup_cedcbe60ddfd4ae7b2cbbd25623ff002 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6956e1f5c32a4431815114e6b2089eda = $(`<div id="html_6956e1f5c32a4431815114e6b2089eda" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_cedcbe60ddfd4ae7b2cbbd25623ff002.setContent(html_6956e1f5c32a4431815114e6b2089eda);
+            
+
+            marker_d3229da1bfd8480881dfbdcedb472bfc.bindPopup(popup_cedcbe60ddfd4ae7b2cbbd25623ff002)
+            ;
+
+            
+        
+    
+        var marker_17de7b9c3b48422a9ffc6fc4e86e37ec = L.marker(
+            [51.628315, 0.293295],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_6c74d7c60d5c41a98eafedf6252ce161 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_17de7b9c3b48422a9ffc6fc4e86e37ec.setIcon(icon_6c74d7c60d5c41a98eafedf6252ce161);
+            
+    
+            var popup_75ce543b0feb439e83c899a22b6a1a65 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_004d36731fc04483a6cf6ffbb5c4e604 = $(`<div id="html_004d36731fc04483a6cf6ffbb5c4e604" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_75ce543b0feb439e83c899a22b6a1a65.setContent(html_004d36731fc04483a6cf6ffbb5c4e604);
+            
+
+            marker_17de7b9c3b48422a9ffc6fc4e86e37ec.bindPopup(popup_75ce543b0feb439e83c899a22b6a1a65)
+            ;
+
+            
+        
+    
+        var marker_c7540e39b7d64485b583db1c2e8a0256 = L.marker(
+            [51.556599, -0.527828],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_16cab47da46f465aa75fd827c885e2c3 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c7540e39b7d64485b583db1c2e8a0256.setIcon(icon_16cab47da46f465aa75fd827c885e2c3);
+            
+    
+            var popup_4d4de8dc83334669a3db347418ff5ec8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bf983be4e082448d93405697aee0cf88 = $(`<div id="html_bf983be4e082448d93405697aee0cf88" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_4d4de8dc83334669a3db347418ff5ec8.setContent(html_bf983be4e082448d93405697aee0cf88);
+            
+
+            marker_c7540e39b7d64485b583db1c2e8a0256.bindPopup(popup_4d4de8dc83334669a3db347418ff5ec8)
+            ;
+
+            
+        
+    
+        var marker_7c083e0e395149b680cd82cf4d59b9e9 = L.marker(
+            [51.468427, 0.34773000000000004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_e8913e8ee0fd4f06a0136a4e0e22a3bf = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c083e0e395149b680cd82cf4d59b9e9.setIcon(icon_e8913e8ee0fd4f06a0136a4e0e22a3bf);
+            
+    
+            var popup_c34f4cdcdf5240709a186c11ce14bf28 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dbdff96892ee421a9e49a3106a0010a1 = $(`<div id="html_dbdff96892ee421a9e49a3106a0010a1" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_c34f4cdcdf5240709a186c11ce14bf28.setContent(html_dbdff96892ee421a9e49a3106a0010a1);
+            
+
+            marker_7c083e0e395149b680cd82cf4d59b9e9.bindPopup(popup_c34f4cdcdf5240709a186c11ce14bf28)
+            ;
+
+            
+        
+    
+        var marker_77a10040b15940ceb6df5f453dca84c2 = L.marker(
+            [52.924199, -1.542124],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_f4600ea88e7748a58cd6080b9162c479 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77a10040b15940ceb6df5f453dca84c2.setIcon(icon_f4600ea88e7748a58cd6080b9162c479);
+            
+    
+            var popup_fc35323c948f46329a72d1ca1749d5ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b13e5f1b15e243cc93c256c0f1738246 = $(`<div id="html_b13e5f1b15e243cc93c256c0f1738246" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 4</div>`)[0];
+                popup_fc35323c948f46329a72d1ca1749d5ce.setContent(html_b13e5f1b15e243cc93c256c0f1738246);
+            
+
+            marker_77a10040b15940ceb6df5f453dca84c2.bindPopup(popup_fc35323c948f46329a72d1ca1749d5ce)
+            ;
+
+            
+        
+    
+        var marker_78e203c44f2b43d6bff5a78096ba645e = L.marker(
+            [53.338005, -1.406443],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c3f98e660afd4851adab45bfd87e68ee = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_78e203c44f2b43d6bff5a78096ba645e.setIcon(icon_c3f98e660afd4851adab45bfd87e68ee);
+            
+    
+            var popup_4341b587e46e4f37a9b2735b64258700 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4769802a2683494bbd0c83c03ef6efd4 = $(`<div id="html_4769802a2683494bbd0c83c03ef6efd4" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_4341b587e46e4f37a9b2735b64258700.setContent(html_4769802a2683494bbd0c83c03ef6efd4);
+            
+
+            marker_78e203c44f2b43d6bff5a78096ba645e.bindPopup(popup_4341b587e46e4f37a9b2735b64258700)
+            ;
+
+            
+        
+    
+        var marker_6c6f0dee63074149ac67a7f39d77afd8 = L.marker(
+            [52.241809, -0.8774350000000001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_fd2bcabddb6f4ed783e6a6ca1c2c5e78 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c6f0dee63074149ac67a7f39d77afd8.setIcon(icon_fd2bcabddb6f4ed783e6a6ca1c2c5e78);
+            
+    
+            var popup_edfcece0756a4dc98005124eb9a8960d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7d47020ecf1344618217748c27791c03 = $(`<div id="html_7d47020ecf1344618217748c27791c03" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_edfcece0756a4dc98005124eb9a8960d.setContent(html_7d47020ecf1344618217748c27791c03);
+            
+
+            marker_6c6f0dee63074149ac67a7f39d77afd8.bindPopup(popup_edfcece0756a4dc98005124eb9a8960d)
+            ;
+
+            
+        
+    
+        var marker_4c98615e3d5a4e44be40d07affde5e1d = L.marker(
+            [51.584795, -0.019637],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_cd2973cbff9d4f00a3c4adf0ee5334ac = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c98615e3d5a4e44be40d07affde5e1d.setIcon(icon_cd2973cbff9d4f00a3c4adf0ee5334ac);
+            
+    
+            var popup_55b0577b74fc42cdbf0ec54d75c5b0e4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b6ca217e15a347ffb145b82073369c11 = $(`<div id="html_b6ca217e15a347ffb145b82073369c11" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_55b0577b74fc42cdbf0ec54d75c5b0e4.setContent(html_b6ca217e15a347ffb145b82073369c11);
+            
+
+            marker_4c98615e3d5a4e44be40d07affde5e1d.bindPopup(popup_55b0577b74fc42cdbf0ec54d75c5b0e4)
+            ;
+
+            
+        
+    
+        var marker_2140c3cca5e046b68c7ca4c2674a4fe7 = L.marker(
+            [51.531315, -0.170754],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_584b9a62ee8945bc88f95c3c6d4f9efa = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2140c3cca5e046b68c7ca4c2674a4fe7.setIcon(icon_584b9a62ee8945bc88f95c3c6d4f9efa);
+            
+    
+            var popup_72022f648b6143628fb415fe051ed6e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_319e782f2b2a487380759ec1b53e9539 = $(`<div id="html_319e782f2b2a487380759ec1b53e9539" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_72022f648b6143628fb415fe051ed6e7.setContent(html_319e782f2b2a487380759ec1b53e9539);
+            
+
+            marker_2140c3cca5e046b68c7ca4c2674a4fe7.bindPopup(popup_72022f648b6143628fb415fe051ed6e7)
+            ;
+
+            
+        
+    
+        var marker_fcc85e7e170e498e96d033e3e1310b01 = L.marker(
+            [51.419252, -3.270658],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_662c02f558754e9cb4f37f03d503b319 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fcc85e7e170e498e96d033e3e1310b01.setIcon(icon_662c02f558754e9cb4f37f03d503b319);
+            
+    
+            var popup_cc57468c62b8416b9ccd1ea2f3985a67 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d62a8d8e372425c9ae68346dd429b42 = $(`<div id="html_5d62a8d8e372425c9ae68346dd429b42" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_cc57468c62b8416b9ccd1ea2f3985a67.setContent(html_5d62a8d8e372425c9ae68346dd429b42);
+            
+
+            marker_fcc85e7e170e498e96d033e3e1310b01.bindPopup(popup_cc57468c62b8416b9ccd1ea2f3985a67)
+            ;
+
+            
+        
+    
+        var marker_e1a6a3cc31944bb99e601722414a370f = L.marker(
+            [51.56365, -1.505511],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_3b0f8a55645f49a392ddab7ca6f9c33f = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e1a6a3cc31944bb99e601722414a370f.setIcon(icon_3b0f8a55645f49a392ddab7ca6f9c33f);
+            
+    
+            var popup_f129abd703c040678418fb325dfa4e8c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3002c5df74d4cea9c6ff5c7cc2ce0ca = $(`<div id="html_e3002c5df74d4cea9c6ff5c7cc2ce0ca" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_f129abd703c040678418fb325dfa4e8c.setContent(html_e3002c5df74d4cea9c6ff5c7cc2ce0ca);
+            
+
+            marker_e1a6a3cc31944bb99e601722414a370f.bindPopup(popup_f129abd703c040678418fb325dfa4e8c)
+            ;
+
+            
+        
+    
+        var marker_256eb1f21a064448b25d946310e08736 = L.marker(
+            [50.205502, -5.39377],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_c5bceb15dda14a1788e9a3d30632ea81 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_256eb1f21a064448b25d946310e08736.setIcon(icon_c5bceb15dda14a1788e9a3d30632ea81);
+            
+    
+            var popup_e4cd740a6bc04b838f6010c0984380b5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2b9a6e40e2ee4ccc8128e44ca1a4eab6 = $(`<div id="html_2b9a6e40e2ee4ccc8128e44ca1a4eab6" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_e4cd740a6bc04b838f6010c0984380b5.setContent(html_2b9a6e40e2ee4ccc8128e44ca1a4eab6);
+            
+
+            marker_256eb1f21a064448b25d946310e08736.bindPopup(popup_e4cd740a6bc04b838f6010c0984380b5)
+            ;
+
+            
+        
+    
+        var marker_56acb3af889d49a2af36676b5fa8761f = L.marker(
+            [51.391133, -0.309452],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_974173221f7f40a2bebb69b6bf00af80 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_56acb3af889d49a2af36676b5fa8761f.setIcon(icon_974173221f7f40a2bebb69b6bf00af80);
+            
+    
+            var popup_3a1679c8f50a4801adbac9f1eee704cb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4dc124c9e0b948cf863f3e4a5df42905 = $(`<div id="html_4dc124c9e0b948cf863f3e4a5df42905" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_3a1679c8f50a4801adbac9f1eee704cb.setContent(html_4dc124c9e0b948cf863f3e4a5df42905);
+            
+
+            marker_56acb3af889d49a2af36676b5fa8761f.bindPopup(popup_3a1679c8f50a4801adbac9f1eee704cb)
+            ;
+
+            
+        
+    
+        var marker_e103b724494a4b33be4aa29bdb91ef18 = L.marker(
+            [51.364746000000004, -0.152116],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_8fe08e144356437cbbdaabaedaaf04a4 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e103b724494a4b33be4aa29bdb91ef18.setIcon(icon_8fe08e144356437cbbdaabaedaaf04a4);
+            
+    
+            var popup_99f8548e4eea4d52b75f16a78e1bb526 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0663337dfbf42e5bd1e9c03f8bc9cc9 = $(`<div id="html_f0663337dfbf42e5bd1e9c03f8bc9cc9" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_99f8548e4eea4d52b75f16a78e1bb526.setContent(html_f0663337dfbf42e5bd1e9c03f8bc9cc9);
+            
+
+            marker_e103b724494a4b33be4aa29bdb91ef18.bindPopup(popup_99f8548e4eea4d52b75f16a78e1bb526)
+            ;
+
+            
+        
+    
+        var marker_a1d09e3d187043dcbba51d891f9f08a1 = L.marker(
+            [54.265874, -3.215378],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_22ee958b0f4845a9b49444d03b26d54b = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1d09e3d187043dcbba51d891f9f08a1.setIcon(icon_22ee958b0f4845a9b49444d03b26d54b);
+            
+    
+            var popup_e699bc11c73d4d27ad084b9b42ac8fd5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_83a607e5117b4b63b353d90df83535c2 = $(`<div id="html_83a607e5117b4b63b353d90df83535c2" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 2</div>`)[0];
+                popup_e699bc11c73d4d27ad084b9b42ac8fd5.setContent(html_83a607e5117b4b63b353d90df83535c2);
+            
+
+            marker_a1d09e3d187043dcbba51d891f9f08a1.bindPopup(popup_e699bc11c73d4d27ad084b9b42ac8fd5)
+            ;
+
+            
+        
+    
+        var marker_6889a07e3e13497181f859392774817f = L.marker(
+            [56.07160699999999, -3.873928],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_2cae7c47f2bc441b89ddaa76c093cc4d = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6889a07e3e13497181f859392774817f.setIcon(icon_2cae7c47f2bc441b89ddaa76c093cc4d);
+            
+    
+            var popup_fc35bdcfdec14152a6fb73a3734b82ed = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0674dbce4b904f71bf659d73ce8f5962 = $(`<div id="html_0674dbce4b904f71bf659d73ce8f5962" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_fc35bdcfdec14152a6fb73a3734b82ed.setContent(html_0674dbce4b904f71bf659d73ce8f5962);
+            
+
+            marker_6889a07e3e13497181f859392774817f.bindPopup(popup_fc35bdcfdec14152a6fb73a3734b82ed)
+            ;
+
+            
+        
+    
+        var marker_4f297b55614b4f31b225514bf9b9b5ff = L.marker(
+            [51.986574, -0.222165],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_750cac345eea4ec58323046a81893b45 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f297b55614b4f31b225514bf9b9b5ff.setIcon(icon_750cac345eea4ec58323046a81893b45);
+            
+    
+            var popup_4604cde57d7d4306bb7df2c821dd46af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e6aac2b2addf46aeae444c33f3b5898b = $(`<div id="html_e6aac2b2addf46aeae444c33f3b5898b" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_4604cde57d7d4306bb7df2c821dd46af.setContent(html_e6aac2b2addf46aeae444c33f3b5898b);
+            
+
+            marker_4f297b55614b4f31b225514bf9b9b5ff.bindPopup(popup_4604cde57d7d4306bb7df2c821dd46af)
+            ;
+
+            
+        
+    
+        var marker_32566255ceef4065996b9b909ce385a4 = L.marker(
+            [54.575573999999996, -2.694096],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ef00bff4f6cf4763b40e1b661a89b687 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32566255ceef4065996b9b909ce385a4.setIcon(icon_ef00bff4f6cf4763b40e1b661a89b687);
+            
+    
+            var popup_116972baf5a3482f963082cc771747ff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_55bf8b19a89548738e0030048196b37c = $(`<div id="html_55bf8b19a89548738e0030048196b37c" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_116972baf5a3482f963082cc771747ff.setContent(html_55bf8b19a89548738e0030048196b37c);
+            
+
+            marker_32566255ceef4065996b9b909ce385a4.bindPopup(popup_116972baf5a3482f963082cc771747ff)
+            ;
+
+            
+        
+    
+        var marker_562e526133404bf99d034263f1673c82 = L.marker(
+            [51.848896, -4.342968],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_0de2b7afff3848a2b2f004f8e0c3e219 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_562e526133404bf99d034263f1673c82.setIcon(icon_0de2b7afff3848a2b2f004f8e0c3e219);
+            
+    
+            var popup_96f1935a120940d79824ef0c917f5129 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9cbe3c72b3c1490292e85ec3f86a5590 = $(`<div id="html_9cbe3c72b3c1490292e85ec3f86a5590" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 2</div>`)[0];
+                popup_96f1935a120940d79824ef0c917f5129.setContent(html_9cbe3c72b3c1490292e85ec3f86a5590);
+            
+
+            marker_562e526133404bf99d034263f1673c82.bindPopup(popup_96f1935a120940d79824ef0c917f5129)
+            ;
+
+            
+        
+    
+        var marker_a5807f91de8f488db378f21ac9070b36 = L.marker(
+            [52.40133, -1.9827709999999998],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_d05ce82bfdd647278b1fec479c38f054 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a5807f91de8f488db378f21ac9070b36.setIcon(icon_d05ce82bfdd647278b1fec479c38f054);
+            
+    
+            var popup_9d766fb9855a414b8ca277350929922b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0e303cf48c6d4782b69ac781983ef9ee = $(`<div id="html_0e303cf48c6d4782b69ac781983ef9ee" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9d766fb9855a414b8ca277350929922b.setContent(html_0e303cf48c6d4782b69ac781983ef9ee);
+            
+
+            marker_a5807f91de8f488db378f21ac9070b36.bindPopup(popup_9d766fb9855a414b8ca277350929922b)
+            ;
+
+            
+        
+    
+        var marker_86ed89757ee447bfbbac81b70aac0cc0 = L.marker(
+            [50.689679999999996, -3.505172],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_122a0c58f12640958cf5e23cc30619dd = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86ed89757ee447bfbbac81b70aac0cc0.setIcon(icon_122a0c58f12640958cf5e23cc30619dd);
+            
+    
+            var popup_1e9d511594834fd8916e8e5cf0e9cd6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0934b98f3c22426e8bcc89d3754c7ddf = $(`<div id="html_0934b98f3c22426e8bcc89d3754c7ddf" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_1e9d511594834fd8916e8e5cf0e9cd6f.setContent(html_0934b98f3c22426e8bcc89d3754c7ddf);
+            
+
+            marker_86ed89757ee447bfbbac81b70aac0cc0.bindPopup(popup_1e9d511594834fd8916e8e5cf0e9cd6f)
+            ;
+
+            
+        
+    
+        var marker_32ef9552ca814fed8592ebabc078a014 = L.marker(
+            [55.816513, -4.363484],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_4b5ce27206094e33a9f81401220100b6 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32ef9552ca814fed8592ebabc078a014.setIcon(icon_4b5ce27206094e33a9f81401220100b6);
+            
+    
+            var popup_6207e4fa342d40b89d38ce531cf13889 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c00c4b6583e4e73a09e411b26425c56 = $(`<div id="html_7c00c4b6583e4e73a09e411b26425c56" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_6207e4fa342d40b89d38ce531cf13889.setContent(html_7c00c4b6583e4e73a09e411b26425c56);
+            
+
+            marker_32ef9552ca814fed8592ebabc078a014.bindPopup(popup_6207e4fa342d40b89d38ce531cf13889)
+            ;
+
+            
+        
+    
+        var marker_253f7e102a4d48cf851139770ee76f34 = L.marker(
+            [54.76375899999999, -1.355818],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_9118e4335ca84ed2be3cabf54736ad0e = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_253f7e102a4d48cf851139770ee76f34.setIcon(icon_9118e4335ca84ed2be3cabf54736ad0e);
+            
+    
+            var popup_0f04160fc48d48ad8d7fb30eb816da4a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6dc9fa42bf3a4af98f75b5e1cc872331 = $(`<div id="html_6dc9fa42bf3a4af98f75b5e1cc872331" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_0f04160fc48d48ad8d7fb30eb816da4a.setContent(html_6dc9fa42bf3a4af98f75b5e1cc872331);
+            
+
+            marker_253f7e102a4d48cf851139770ee76f34.bindPopup(popup_0f04160fc48d48ad8d7fb30eb816da4a)
+            ;
+
+            
+        
+    
+        var marker_27cc5bb07a1b4586b23a99085700b38e = L.marker(
+            [51.002543, -0.079886],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_cf511a7eed0c404c9ad5c9344e229289 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_27cc5bb07a1b4586b23a99085700b38e.setIcon(icon_cf511a7eed0c404c9ad5c9344e229289);
+            
+    
+            var popup_125aaad401fc4632844b86a96da657e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_080ff378461a443bad088a292257f37c = $(`<div id="html_080ff378461a443bad088a292257f37c" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_125aaad401fc4632844b86a96da657e3.setContent(html_080ff378461a443bad088a292257f37c);
+            
+
+            marker_27cc5bb07a1b4586b23a99085700b38e.bindPopup(popup_125aaad401fc4632844b86a96da657e3)
+            ;
+
+            
+        
+    
+        var marker_f45540115de34520ae95cab882bc06aa = L.marker(
+            [53.800914, -1.5980530000000002],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_87a6a5a90fd24b4185feb2f0e21c4143 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f45540115de34520ae95cab882bc06aa.setIcon(icon_87a6a5a90fd24b4185feb2f0e21c4143);
+            
+    
+            var popup_2882fab65dfe47c2878e67cf0e254c4a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8a38a24de96642d7975a9c4786afdd2f = $(`<div id="html_8a38a24de96642d7975a9c4786afdd2f" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_2882fab65dfe47c2878e67cf0e254c4a.setContent(html_8a38a24de96642d7975a9c4786afdd2f);
+            
+
+            marker_f45540115de34520ae95cab882bc06aa.bindPopup(popup_2882fab65dfe47c2878e67cf0e254c4a)
+            ;
+
+            
+        
+    
+        var marker_0a6af0a1653b40ebbed660f8fa68439b = L.marker(
+            [51.288466, 0.489654],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ef35e17a43254b6b8c77c255f9be53d3 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a6af0a1653b40ebbed660f8fa68439b.setIcon(icon_ef35e17a43254b6b8c77c255f9be53d3);
+            
+    
+            var popup_3d28ec075828467abb64a8fc98b1342f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_46f3cdbbd4fb413fa771c30f4e6d5efd = $(`<div id="html_46f3cdbbd4fb413fa771c30f4e6d5efd" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_3d28ec075828467abb64a8fc98b1342f.setContent(html_46f3cdbbd4fb413fa771c30f4e6d5efd);
+            
+
+            marker_0a6af0a1653b40ebbed660f8fa68439b.bindPopup(popup_3d28ec075828467abb64a8fc98b1342f)
+            ;
+
+            
+        
+    
+        var marker_9156c45c43da42078b1108d59fd1cafd = L.marker(
+            [51.463254, -0.114883],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_3718b472ed9c4083aa5c2e31158b7d0f = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9156c45c43da42078b1108d59fd1cafd.setIcon(icon_3718b472ed9c4083aa5c2e31158b7d0f);
+            
+    
+            var popup_1af6406d3fa4463cabfeddde3bc42ab2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_de1f13988af0476c8ffd9010ac1cda82 = $(`<div id="html_de1f13988af0476c8ffd9010ac1cda82" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_1af6406d3fa4463cabfeddde3bc42ab2.setContent(html_de1f13988af0476c8ffd9010ac1cda82);
+            
+
+            marker_9156c45c43da42078b1108d59fd1cafd.bindPopup(popup_1af6406d3fa4463cabfeddde3bc42ab2)
+            ;
+
+            
+        
+    
+        var marker_7d9d95c661da43b293810ccba42501ba = L.marker(
+            [53.533325, -2.431675],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_9df28edb8c334098a5209290713ee041 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d9d95c661da43b293810ccba42501ba.setIcon(icon_9df28edb8c334098a5209290713ee041);
+            
+    
+            var popup_0fe60a2d42da4210b6e4e53ea273aa51 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_91d06ea17ed846ab8c68b0a6e2dd6e92 = $(`<div id="html_91d06ea17ed846ab8c68b0a6e2dd6e92" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_0fe60a2d42da4210b6e4e53ea273aa51.setContent(html_91d06ea17ed846ab8c68b0a6e2dd6e92);
+            
+
+            marker_7d9d95c661da43b293810ccba42501ba.bindPopup(popup_0fe60a2d42da4210b6e4e53ea273aa51)
+            ;
+
+            
+        
+    
+        var marker_3b9dd5e5864a49df984867267073ff88 = L.marker(
+            [51.78472, -1.1787379999999998],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_f6114082c04440428cf5d5e42d90352f = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3b9dd5e5864a49df984867267073ff88.setIcon(icon_f6114082c04440428cf5d5e42d90352f);
+            
+    
+            var popup_c54f8637da234edfb1c255d8b01350e5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_037681d83c604126aa85afab33749779 = $(`<div id="html_037681d83c604126aa85afab33749779" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 6</div>`)[0];
+                popup_c54f8637da234edfb1c255d8b01350e5.setContent(html_037681d83c604126aa85afab33749779);
+            
+
+            marker_3b9dd5e5864a49df984867267073ff88.bindPopup(popup_c54f8637da234edfb1c255d8b01350e5)
+            ;
+
+            
+        
+    
+        var marker_4d0cfbe7826948738c77ca3e254c0005 = L.marker(
+            [52.441864, -1.843435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_5404088ab0e84ee8abe67e78731945ae = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d0cfbe7826948738c77ca3e254c0005.setIcon(icon_5404088ab0e84ee8abe67e78731945ae);
+            
+    
+            var popup_7f7a4595cff04de398dba4e370c51cef = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e2b9d7a8720842388834f2b88a302a97 = $(`<div id="html_e2b9d7a8720842388834f2b88a302a97" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_7f7a4595cff04de398dba4e370c51cef.setContent(html_e2b9d7a8720842388834f2b88a302a97);
+            
+
+            marker_4d0cfbe7826948738c77ca3e254c0005.bindPopup(popup_7f7a4595cff04de398dba4e370c51cef)
+            ;
+
+            
+        
+    
+        var marker_14c9d05aefa542df9703b5516b2884d3 = L.marker(
+            [52.76901899999999, -0.892174],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_93b29615e52a4056a9ebdf7d89cccbe5 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_14c9d05aefa542df9703b5516b2884d3.setIcon(icon_93b29615e52a4056a9ebdf7d89cccbe5);
+            
+    
+            var popup_f0abc6378db449a08dd3cd4e287905f5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_07f9d319075743e8bc6c4f36394d7094 = $(`<div id="html_07f9d319075743e8bc6c4f36394d7094" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_f0abc6378db449a08dd3cd4e287905f5.setContent(html_07f9d319075743e8bc6c4f36394d7094);
+            
+
+            marker_14c9d05aefa542df9703b5516b2884d3.bindPopup(popup_f0abc6378db449a08dd3cd4e287905f5)
+            ;
+
+            
+        
+    
+        var marker_9d4552e137cb43daa0ba0a62e8198726 = L.marker(
+            [52.89742, -1.479079],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_2787fb4ed2284762813e2a866ec09c8c = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9d4552e137cb43daa0ba0a62e8198726.setIcon(icon_2787fb4ed2284762813e2a866ec09c8c);
+            
+    
+            var popup_56f2b24616be4907afe39195ec84e3e6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_70df095288f749e58e1cd96b7e4d8972 = $(`<div id="html_70df095288f749e58e1cd96b7e4d8972" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 3</div>`)[0];
+                popup_56f2b24616be4907afe39195ec84e3e6.setContent(html_70df095288f749e58e1cd96b7e4d8972);
+            
+
+            marker_9d4552e137cb43daa0ba0a62e8198726.bindPopup(popup_56f2b24616be4907afe39195ec84e3e6)
+            ;
+
+            
+        
+    
+        var marker_953ca8a95ab7445690ca5925acfca301 = L.marker(
+            [55.173345, -1.6934639999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_65259bf08a2e4d778310ea6b13da5a02 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_953ca8a95ab7445690ca5925acfca301.setIcon(icon_65259bf08a2e4d778310ea6b13da5a02);
+            
+    
+            var popup_4fa97eb60d534bed9a8c58647c0969eb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8761fccc886b4828b4e882724a652977 = $(`<div id="html_8761fccc886b4828b4e882724a652977" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_4fa97eb60d534bed9a8c58647c0969eb.setContent(html_8761fccc886b4828b4e882724a652977);
+            
+
+            marker_953ca8a95ab7445690ca5925acfca301.bindPopup(popup_4fa97eb60d534bed9a8c58647c0969eb)
+            ;
+
+            
+        
+    
+        var marker_ab9d9a9c37c64e5794281deebe94eb5a = L.marker(
+            [52.465734, -1.8829470000000001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_2d8efefcc46c48858a5f29dba76ab632 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab9d9a9c37c64e5794281deebe94eb5a.setIcon(icon_2d8efefcc46c48858a5f29dba76ab632);
+            
+    
+            var popup_dd6b7cea47ba4514b56ea24b2ead7220 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ffd8480ffbc7496686caeb9afe87040b = $(`<div id="html_ffd8480ffbc7496686caeb9afe87040b" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_dd6b7cea47ba4514b56ea24b2ead7220.setContent(html_ffd8480ffbc7496686caeb9afe87040b);
+            
+
+            marker_ab9d9a9c37c64e5794281deebe94eb5a.bindPopup(popup_dd6b7cea47ba4514b56ea24b2ead7220)
+            ;
+
+            
+        
+    
+        var marker_7bd60904630e45609c4b43e7d4a52f82 = L.marker(
+            [54.950387, -1.632069],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_9b86a7538e3f4c5190598ea4d2196385 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7bd60904630e45609c4b43e7d4a52f82.setIcon(icon_9b86a7538e3f4c5190598ea4d2196385);
+            
+    
+            var popup_a9778ac983d94fefb6f8a41efc432637 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81b1bb2ba7424fa3964ea51abc7ec677 = $(`<div id="html_81b1bb2ba7424fa3964ea51abc7ec677" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 2</div>`)[0];
+                popup_a9778ac983d94fefb6f8a41efc432637.setContent(html_81b1bb2ba7424fa3964ea51abc7ec677);
+            
+
+            marker_7bd60904630e45609c4b43e7d4a52f82.bindPopup(popup_a9778ac983d94fefb6f8a41efc432637)
+            ;
+
+            
+        
+    
+        var marker_a0c8470512f64bbe9ce45871b642455a = L.marker(
+            [52.968033999999996, -1.15406],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_4f52ac3be20441c1b1b8b1c1db1daef9 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0c8470512f64bbe9ce45871b642455a.setIcon(icon_4f52ac3be20441c1b1b8b1c1db1daef9);
+            
+    
+            var popup_9eeb8de89b5344f092e5103e7ede2e29 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42c13eb7aa314cc1b51b95e35d244deb = $(`<div id="html_42c13eb7aa314cc1b51b95e35d244deb" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9eeb8de89b5344f092e5103e7ede2e29.setContent(html_42c13eb7aa314cc1b51b95e35d244deb);
+            
+
+            marker_a0c8470512f64bbe9ce45871b642455a.bindPopup(popup_9eeb8de89b5344f092e5103e7ede2e29)
+            ;
+
+            
+        
+    
+        var marker_1a73775b462a491896857bd7c5f4116b = L.marker(
+            [52.957631000000006, -2.6522810000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_890a397fca6041929eba8cf373d5aa3c = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a73775b462a491896857bd7c5f4116b.setIcon(icon_890a397fca6041929eba8cf373d5aa3c);
+            
+    
+            var popup_fb9066bcc9124bd8a4380bf104e3a30c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0fbf2d0c91144c98bc997678b7bc587f = $(`<div id="html_0fbf2d0c91144c98bc997678b7bc587f" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 2</div>`)[0];
+                popup_fb9066bcc9124bd8a4380bf104e3a30c.setContent(html_0fbf2d0c91144c98bc997678b7bc587f);
+            
+
+            marker_1a73775b462a491896857bd7c5f4116b.bindPopup(popup_fb9066bcc9124bd8a4380bf104e3a30c)
+            ;
+
+            
+        
+    
+        var marker_60ae0d183974423ca503b143699fe2a2 = L.marker(
+            [51.953321, -0.722341],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_835d643317ec415c9a37e96ee20e5a5d = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60ae0d183974423ca503b143699fe2a2.setIcon(icon_835d643317ec415c9a37e96ee20e5a5d);
+            
+    
+            var popup_1a34ae2f5bd446d2ad00bd6b7ac6f646 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d9e58f6cd70142dd9489ccd0b2c9cef8 = $(`<div id="html_d9e58f6cd70142dd9489ccd0b2c9cef8" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_1a34ae2f5bd446d2ad00bd6b7ac6f646.setContent(html_d9e58f6cd70142dd9489ccd0b2c9cef8);
+            
+
+            marker_60ae0d183974423ca503b143699fe2a2.bindPopup(popup_1a34ae2f5bd446d2ad00bd6b7ac6f646)
+            ;
+
+            
+        
+    
+        var marker_aaf346cfb00842608f39a3e57329ef9d = L.marker(
+            [57.463552, -2.791808],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_65c4ee2e39db45f2b3b03c3d523689ba = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aaf346cfb00842608f39a3e57329ef9d.setIcon(icon_65c4ee2e39db45f2b3b03c3d523689ba);
+            
+    
+            var popup_6382a21e0f9747c38c4c2e2fcbbe316c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b05b3eb1a89b434e9a6effabe0ec5135 = $(`<div id="html_b05b3eb1a89b434e9a6effabe0ec5135" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 3</div>`)[0];
+                popup_6382a21e0f9747c38c4c2e2fcbbe316c.setContent(html_b05b3eb1a89b434e9a6effabe0ec5135);
+            
+
+            marker_aaf346cfb00842608f39a3e57329ef9d.bindPopup(popup_6382a21e0f9747c38c4c2e2fcbbe316c)
+            ;
+
+            
+        
+    
+        var marker_4d4d5cfdb3f0458298562b6ab83c7555 = L.marker(
+            [51.640021999999995, 0.6159319999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_35049df28692476086f2742fef1a9e65 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d4d5cfdb3f0458298562b6ab83c7555.setIcon(icon_35049df28692476086f2742fef1a9e65);
+            
+    
+            var popup_2a8f581cf39e4050a2eb07e69459da13 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f01fbad6a8f2448b9558d7ecdaecbcf0 = $(`<div id="html_f01fbad6a8f2448b9558d7ecdaecbcf0" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 1</div>`)[0];
+                popup_2a8f581cf39e4050a2eb07e69459da13.setContent(html_f01fbad6a8f2448b9558d7ecdaecbcf0);
+            
+
+            marker_4d4d5cfdb3f0458298562b6ab83c7555.bindPopup(popup_2a8f581cf39e4050a2eb07e69459da13)
+            ;
+
+            
+        
+    
+        var marker_0c4b27810d4e4b22aead7681fbf2049e = L.marker(
+            [53.719060999999996, -2.700344],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_2405722de949419fae7b87facda8bada = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c4b27810d4e4b22aead7681fbf2049e.setIcon(icon_2405722de949419fae7b87facda8bada);
+            
+    
+            var popup_bcaf8f080bac42a0bb9f2cc9c67562f7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6356c05923334e62b63d7e89839d4e69 = $(`<div id="html_6356c05923334e62b63d7e89839d4e69" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_bcaf8f080bac42a0bb9f2cc9c67562f7.setContent(html_6356c05923334e62b63d7e89839d4e69);
+            
+
+            marker_0c4b27810d4e4b22aead7681fbf2049e.bindPopup(popup_bcaf8f080bac42a0bb9f2cc9c67562f7)
+            ;
+
+            
+        
+    
+        var marker_bab194bb414f4972bd82c95bfb5912cc = L.marker(
+            [51.668661, -0.606842],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_da6c19e0a31445d281617412e78edd27 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bab194bb414f4972bd82c95bfb5912cc.setIcon(icon_da6c19e0a31445d281617412e78edd27);
+            
+    
+            var popup_b2001efc563348a5bf2f18d071d7d079 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dbcf71a3d35f4e77ae308ee59130968c = $(`<div id="html_dbcf71a3d35f4e77ae308ee59130968c" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_b2001efc563348a5bf2f18d071d7d079.setContent(html_dbcf71a3d35f4e77ae308ee59130968c);
+            
+
+            marker_bab194bb414f4972bd82c95bfb5912cc.bindPopup(popup_b2001efc563348a5bf2f18d071d7d079)
+            ;
+
+            
+        
+    
+        var marker_7c2da85764f5479fa5bd5c71ecb9fc97 = L.marker(
+            [52.513348, -1.985527],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_859ace68fb6e4401ae1fcbf99a9cb208 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c2da85764f5479fa5bd5c71ecb9fc97.setIcon(icon_859ace68fb6e4401ae1fcbf99a9cb208);
+            
+    
+            var popup_341d5e0c0f9e40b0bf8cd2f41949557d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7e5eebd7f1fd47bbba7fbe1fcc64e9ce = $(`<div id="html_7e5eebd7f1fd47bbba7fbe1fcc64e9ce" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_341d5e0c0f9e40b0bf8cd2f41949557d.setContent(html_7e5eebd7f1fd47bbba7fbe1fcc64e9ce);
+            
+
+            marker_7c2da85764f5479fa5bd5c71ecb9fc97.bindPopup(popup_341d5e0c0f9e40b0bf8cd2f41949557d)
+            ;
+
+            
+        
+    
+        var marker_70c795b7d2624547842430c53f138556 = L.marker(
+            [51.498112, -0.42997399999999997],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_03a9960ec31446879c4565b198d0ab1f = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70c795b7d2624547842430c53f138556.setIcon(icon_03a9960ec31446879c4565b198d0ab1f);
+            
+    
+            var popup_d821b20635b946879442c3661b915258 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3afef0abf17e47f9b55c2c7abbb8b4cf = $(`<div id="html_3afef0abf17e47f9b55c2c7abbb8b4cf" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_d821b20635b946879442c3661b915258.setContent(html_3afef0abf17e47f9b55c2c7abbb8b4cf);
+            
+
+            marker_70c795b7d2624547842430c53f138556.bindPopup(popup_d821b20635b946879442c3661b915258)
+            ;
+
+            
+        
+    
+        var marker_fae2c4beeb664c60ad8daf2a9213ce04 = L.marker(
+            [52.28926, -0.620004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_9e12e678b2e64afb8e7d22abf742ca1f = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fae2c4beeb664c60ad8daf2a9213ce04.setIcon(icon_9e12e678b2e64afb8e7d22abf742ca1f);
+            
+    
+            var popup_cf8086924328414ab486663ff8e1d36a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_10f7971e8f6443e19eafd2877aebe17b = $(`<div id="html_10f7971e8f6443e19eafd2877aebe17b" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_cf8086924328414ab486663ff8e1d36a.setContent(html_10f7971e8f6443e19eafd2877aebe17b);
+            
+
+            marker_fae2c4beeb664c60ad8daf2a9213ce04.bindPopup(popup_cf8086924328414ab486663ff8e1d36a)
+            ;
+
+            
+        
+    
+        var marker_7db417d5be3f468993a4259864b8e3c9 = L.marker(
+            [52.487848, -1.812198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_5b30901ac74743638d5a58a0a6451436 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7db417d5be3f468993a4259864b8e3c9.setIcon(icon_5b30901ac74743638d5a58a0a6451436);
+            
+    
+            var popup_0430f538618747489e5be2f212e7f1e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b09505c5366d4895a5ed76df78770b41 = $(`<div id="html_b09505c5366d4895a5ed76df78770b41" style="width: 100.0%; height: 100.0%;">Number of vehicles: 3 Number of casualties: 2</div>`)[0];
+                popup_0430f538618747489e5be2f212e7f1e9.setContent(html_b09505c5366d4895a5ed76df78770b41);
+            
+
+            marker_7db417d5be3f468993a4259864b8e3c9.bindPopup(popup_0430f538618747489e5be2f212e7f1e9)
+            ;
+
+            
+        
+    
+        var marker_b0b27551f6684616be0b35a1964f14ba = L.marker(
+            [51.994453, -1.257795],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_7b5fd262a58f4ea2bb5d94e873c925ce = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b0b27551f6684616be0b35a1964f14ba.setIcon(icon_7b5fd262a58f4ea2bb5d94e873c925ce);
+            
+    
+            var popup_80a17bb45b03497191d744210d537281 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a03510442ae42c2abc0b9cab9921944 = $(`<div id="html_4a03510442ae42c2abc0b9cab9921944" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_80a17bb45b03497191d744210d537281.setContent(html_4a03510442ae42c2abc0b9cab9921944);
+            
+
+            marker_b0b27551f6684616be0b35a1964f14ba.bindPopup(popup_80a17bb45b03497191d744210d537281)
+            ;
+
+            
+        
+    
+        var marker_e0ece432b0e441258044f56b8ef2de01 = L.marker(
+            [55.91443, -3.3369989999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_bdf394a28dff459a855ab725d59ee23e = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e0ece432b0e441258044f56b8ef2de01.setIcon(icon_bdf394a28dff459a855ab725d59ee23e);
+            
+    
+            var popup_ec24de2dd61c4fd9acabe70193c63a45 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8cb8fa782c2943f5b77d182412f83b0b = $(`<div id="html_8cb8fa782c2943f5b77d182412f83b0b" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_ec24de2dd61c4fd9acabe70193c63a45.setContent(html_8cb8fa782c2943f5b77d182412f83b0b);
+            
+
+            marker_e0ece432b0e441258044f56b8ef2de01.bindPopup(popup_ec24de2dd61c4fd9acabe70193c63a45)
+            ;
+
+            
+        
+    
+        var marker_3442d1c88072489485382f9c06121a13 = L.marker(
+            [51.481367999999996, -0.48326],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_8491b10b691745139a036102f46e2000 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3442d1c88072489485382f9c06121a13.setIcon(icon_8491b10b691745139a036102f46e2000);
+            
+    
+            var popup_484502eabdee4a538b3de7e91f73186d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a6eb75ba8b7e43e48ab6543ba93d3d6a = $(`<div id="html_a6eb75ba8b7e43e48ab6543ba93d3d6a" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_484502eabdee4a538b3de7e91f73186d.setContent(html_a6eb75ba8b7e43e48ab6543ba93d3d6a);
+            
+
+            marker_3442d1c88072489485382f9c06121a13.bindPopup(popup_484502eabdee4a538b3de7e91f73186d)
+            ;
+
+            
+        
+    
+        var marker_100bb8fc94ae40e5a6b1edce1df047e4 = L.marker(
+            [55.943743000000005, -3.0586029999999997],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_a2b1289e6c8e42e3b9b7ff2a1f0d6dd7 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_100bb8fc94ae40e5a6b1edce1df047e4.setIcon(icon_a2b1289e6c8e42e3b9b7ff2a1f0d6dd7);
+            
+    
+            var popup_689c41e5db4c4c11afa73d04506485de = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_653b4763b75a42e491403009fabae6db = $(`<div id="html_653b4763b75a42e491403009fabae6db" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_689c41e5db4c4c11afa73d04506485de.setContent(html_653b4763b75a42e491403009fabae6db);
+            
+
+            marker_100bb8fc94ae40e5a6b1edce1df047e4.bindPopup(popup_689c41e5db4c4c11afa73d04506485de)
+            ;
+
+            
+        
+    
+        var marker_c61fad1b22644947aa1f4ba276ebf2bc = L.marker(
+            [52.60643100000001, 1.336044],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_ce677a14d69d401e82046dbf2f0c0e36 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c61fad1b22644947aa1f4ba276ebf2bc.setIcon(icon_ce677a14d69d401e82046dbf2f0c0e36);
+            
+    
+            var popup_5f6fc4bf37d04c07a42bc0e85e8bdb6d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c04fd947926f47838f4e99e9349d9ca6 = $(`<div id="html_c04fd947926f47838f4e99e9349d9ca6" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 3</div>`)[0];
+                popup_5f6fc4bf37d04c07a42bc0e85e8bdb6d.setContent(html_c04fd947926f47838f4e99e9349d9ca6);
+            
+
+            marker_c61fad1b22644947aa1f4ba276ebf2bc.bindPopup(popup_5f6fc4bf37d04c07a42bc0e85e8bdb6d)
+            ;
+
+            
+        
+    
+        var marker_d7fc1a7d88574ccc85ec4404b0a4a2c6 = L.marker(
+            [51.444175, -0.36548600000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_cc06c1d50a0f41c092a9ccd35c39446e = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d7fc1a7d88574ccc85ec4404b0a4a2c6.setIcon(icon_cc06c1d50a0f41c092a9ccd35c39446e);
+            
+    
+            var popup_10035b0117e84422ba9fb89db6a83f0e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6c8dcf8d58b2472cb0d773d22085e6f1 = $(`<div id="html_6c8dcf8d58b2472cb0d773d22085e6f1" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_10035b0117e84422ba9fb89db6a83f0e.setContent(html_6c8dcf8d58b2472cb0d773d22085e6f1);
+            
+
+            marker_d7fc1a7d88574ccc85ec4404b0a4a2c6.bindPopup(popup_10035b0117e84422ba9fb89db6a83f0e)
+            ;
+
+            
+        
+    
+        var marker_f903d8adea04426faf5de60216d85cd1 = L.marker(
+            [53.400254000000004, -2.98827],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_bb1460874e104d9aae4fe04d0d48b8d6 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f903d8adea04426faf5de60216d85cd1.setIcon(icon_bb1460874e104d9aae4fe04d0d48b8d6);
+            
+    
+            var popup_a86306bfbfc7497c95109f128d2448d4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5c1279313a2d4c868a85220b2e463fe9 = $(`<div id="html_5c1279313a2d4c868a85220b2e463fe9" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 3</div>`)[0];
+                popup_a86306bfbfc7497c95109f128d2448d4.setContent(html_5c1279313a2d4c868a85220b2e463fe9);
+            
+
+            marker_f903d8adea04426faf5de60216d85cd1.bindPopup(popup_a86306bfbfc7497c95109f128d2448d4)
+            ;
+
+            
+        
+    
+        var marker_83a9cf16dcaa41649af39058f9d19c4d = L.marker(
+            [52.795731, -0.8233440000000001],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_47b974967a1b40e086aedd8dafa75986 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_83a9cf16dcaa41649af39058f9d19c4d.setIcon(icon_47b974967a1b40e086aedd8dafa75986);
+            
+    
+            var popup_ba511b2273cf46c4a2792a834377b9f4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a3c76d9e417843479568e06213abd311 = $(`<div id="html_a3c76d9e417843479568e06213abd311" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 2</div>`)[0];
+                popup_ba511b2273cf46c4a2792a834377b9f4.setContent(html_a3c76d9e417843479568e06213abd311);
+            
+
+            marker_83a9cf16dcaa41649af39058f9d19c4d.bindPopup(popup_ba511b2273cf46c4a2792a834377b9f4)
+            ;
+
+            
+        
+    
+        var marker_84ffd2e3ae2947f1aa8358df44f46409 = L.marker(
+            [52.25976, 0.410797],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_2ae92be7318141b19fe6141e4887e340 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_84ffd2e3ae2947f1aa8358df44f46409.setIcon(icon_2ae92be7318141b19fe6141e4887e340);
+            
+    
+            var popup_77ab0ab7ff334ef3ae9899a3b11761a2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0870ee9dde75463cbe7d7ac58dd289b9 = $(`<div id="html_0870ee9dde75463cbe7d7ac58dd289b9" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_77ab0ab7ff334ef3ae9899a3b11761a2.setContent(html_0870ee9dde75463cbe7d7ac58dd289b9);
+            
+
+            marker_84ffd2e3ae2947f1aa8358df44f46409.bindPopup(popup_77ab0ab7ff334ef3ae9899a3b11761a2)
+            ;
+
+            
+        
+    
+        var marker_d9ac604c2f4240d0af775dee98e82f6f = L.marker(
+            [54.449841000000006, -3.504308],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_1e2afc52227a415c9bbdd5b9759da319 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d9ac604c2f4240d0af775dee98e82f6f.setIcon(icon_1e2afc52227a415c9bbdd5b9759da319);
+            
+    
+            var popup_15fe3d83c8014c7682e715e4f066eb9d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e40925f281224fe3af29f68a12eacc60 = $(`<div id="html_e40925f281224fe3af29f68a12eacc60" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_15fe3d83c8014c7682e715e4f066eb9d.setContent(html_e40925f281224fe3af29f68a12eacc60);
+            
+
+            marker_d9ac604c2f4240d0af775dee98e82f6f.bindPopup(popup_15fe3d83c8014c7682e715e4f066eb9d)
+            ;
+
+            
+        
+    
+        var marker_38c3f82334f849dbaf368c50ab432102 = L.marker(
+            [52.48303000000001, -2.072564],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_b412ff06b4fb4ce796c9ba4728948eaa = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_38c3f82334f849dbaf368c50ab432102.setIcon(icon_b412ff06b4fb4ce796c9ba4728948eaa);
+            
+    
+            var popup_9ceff3121c1249a6ae4c8276906ac114 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2bec20a4da8e4f828096b454086b65ea = $(`<div id="html_2bec20a4da8e4f828096b454086b65ea" style="width: 100.0%; height: 100.0%;">Number of vehicles: 2 Number of casualties: 1</div>`)[0];
+                popup_9ceff3121c1249a6ae4c8276906ac114.setContent(html_2bec20a4da8e4f828096b454086b65ea);
+            
+
+            marker_38c3f82334f849dbaf368c50ab432102.bindPopup(popup_9ceff3121c1249a6ae4c8276906ac114)
+            ;
+
+            
+        
+    
+        var marker_2e2fe79179ae422d9c1f806203df86ef = L.marker(
+            [51.568707, 0.08370599999999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_4cea3efbb50e41b987435acf2e704efe = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e2fe79179ae422d9c1f806203df86ef.setIcon(icon_4cea3efbb50e41b987435acf2e704efe);
+            
+    
+            var popup_42d6fb7856a24ca1b0447315436c0b3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4491efcec9d14568a69431d3f069fec0 = $(`<div id="html_4491efcec9d14568a69431d3f069fec0" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_42d6fb7856a24ca1b0447315436c0b3f.setContent(html_4491efcec9d14568a69431d3f069fec0);
+            
+
+            marker_2e2fe79179ae422d9c1f806203df86ef.bindPopup(popup_42d6fb7856a24ca1b0447315436c0b3f)
+            ;
+
+            
+        
+    
+        var marker_7e155aeb54ef45ee84f1269eb3c67623 = L.marker(
+            [51.606369, -0.469999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_92b02a75c05a4665ad07c4b260709988 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e155aeb54ef45ee84f1269eb3c67623.setIcon(icon_92b02a75c05a4665ad07c4b260709988);
+            
+    
+            var popup_5b92aed8adad40eb82cd20dda700a30f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_066b63b3e3644ca0adfb04bb173283e6 = $(`<div id="html_066b63b3e3644ca0adfb04bb173283e6" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_5b92aed8adad40eb82cd20dda700a30f.setContent(html_066b63b3e3644ca0adfb04bb173283e6);
+            
+
+            marker_7e155aeb54ef45ee84f1269eb3c67623.bindPopup(popup_5b92aed8adad40eb82cd20dda700a30f)
+            ;
+
+            
+        
+    
+        var marker_8383f86338ee4cfc9c390fc86f390050 = L.marker(
+            [51.762040999999996, 0.105466],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_77c3dd2ae1dd49e0ad262559adf68691);
+        
+    
+
+                var icon_1396439f6cb2441d87b4119ee7727290 = L.AwesomeMarkers.icon({
+                    icon: 'car',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8383f86338ee4cfc9c390fc86f390050.setIcon(icon_1396439f6cb2441d87b4119ee7727290);
+            
+    
+            var popup_462161ba7cd24efcbfc10b6764840aa9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_03b568d44bb544e08f911a826ca8b2f8 = $(`<div id="html_03b568d44bb544e08f911a826ca8b2f8" style="width: 100.0%; height: 100.0%;">Number of vehicles: 1 Number of casualties: 1</div>`)[0];
+                popup_462161ba7cd24efcbfc10b6764840aa9.setContent(html_03b568d44bb544e08f911a826ca8b2f8);
+            
+
+            marker_8383f86338ee4cfc9c390fc86f390050.bindPopup(popup_462161ba7cd24efcbfc10b6764840aa9)
+            ;
+
+            
+        
+</script>
